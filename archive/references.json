@@ -1,0 +1,44 @@
+{
+    "column_descriptions": {
+        "tbl": "Identificador de la tabla de origen de los datos",
+        "Year": "Año del registro",
+        "quarter": "Trimestre del año (1-4)",
+        "citymarketid_1": "ID del mercado de la ciudad de origen",
+        "citymarketid_2": "ID del mercado de la ciudad de destino",
+        "city1": "Nombre de la ciudad de origen",
+        "city2": "Nombre de la ciudad de destino",
+        "airportid_1": "ID del aeropuerto de origen",
+        "airportid_2": "ID del aeropuerto de destino",
+        "airport_1": "Código IATA del aeropuerto de origen",
+        "airport_2": "Código IATA del aeropuerto de destino",
+        "nsmiles": "Distancia en millas náuticas entre los aeropuertos",
+        "passengers": "Número de pasajeros transportados en la ruta",
+        "fare": "Tarifa promedio del vuelo",
+        "carrier_lg": "Código de la aerolínea tradicional (legacy carrier) principal en la ruta",
+        "large_ms": "Cuota de mercado (market share) de la aerolínea tradicional",
+        "fare_lg": "Tarifa promedio de la aerolínea tradicional",
+        "carrier_low": "Código de la aerolínea de bajo costo (low-cost carrier) principal en la ruta",
+        "lf_ms": "Cuota de mercado de la aerolínea de bajo costo",
+        "fare_low": "Tarifa promedio de la aerolínea de bajo costo",
+        "Geocoded_City1": "Información geográfica codificada de la ciudad de origen",
+        "Geocoded_City2": "Información geográfica codificada de la ciudad de destino",
+        "tbl1apk": "Clave primaria de la tabla"
+    },
+    "dataset_info": {
+        "name": "US Airline Flight Routes and Fares 1993-2024",
+        "description": "Dataset que contiene información histórica sobre rutas de vuelo y tarifas en Estados Unidos, incluyendo datos de aerolíneas tradicionales y de bajo costo",
+        "period": "1993-2024",
+        "country": "Estados Unidos",
+        "units": {
+            "nsmiles": "Millas náuticas",
+            "fare": "Dólares estadounidenses (USD)",
+            "market_share": "Porcentaje (%)"
+        }
+    },
+    "notes": {
+        "airport_codes": "Los códigos de aeropuerto siguen el estándar IATA (International Air Transport Association)",
+        "carrier_codes": "Los códigos de aerolíneas son códigos IATA de dos letras que identifican a cada aerolínea",
+        "fares": "Las tarifas están en dólares estadounidenses y representan el precio promedio por ruta",
+        "market_share": "Las cuotas de mercado están expresadas en porcentajes del total de pasajeros en la ruta"
+    }
+}
