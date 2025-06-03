@@ -13,26 +13,30 @@ Este proyecto analiza un conjunto de datos históricos sobre rutas de vuelo y ta
 ### Configuración del Entorno
 
 1. **Clonar el repositorio**
+
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_DIRECTORIO>
+   git clone https://github.com/Cluuny/USAirlinesBD2.git
+   cd USAirlinesBD2
    ```
 
 2. **Crear y activar el entorno virtual**
 
    En Windows:
+
    ```bash
    python -m venv venv
    .\venv\Scripts\activate
    ```
 
    En macOS/Linux:
+
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    ```
 
 3. **Instalar dependencias**
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -44,11 +48,13 @@ El proyecto incluye dos scripts principales para análisis de datos:
 ### 1. Análisis Básico (`analyze_csv.py`)
 
 Proporciona un resumen rápido del dataset:
+
 ```bash
 python analyze_csv.py
 ```
 
 Este script muestra:
+
 - Total de registros
 - Período que abarca el dataset
 - Número de rutas y aeropuertos únicos
@@ -58,11 +64,13 @@ Este script muestra:
 ### 2. Análisis Detallado (`detailed_analysis.py`)
 
 Ofrece un análisis interactivo más profundo:
+
 ```bash
 python detailed_analysis.py
 ```
 
 Incluye las siguientes opciones de análisis:
+
 1. **Análisis Temporal**: Tendencias anuales y trimestrales
 2. **Análisis de Rutas**: Rutas más caras y más largas
 3. **Análisis de Competencia**: Comparación entre aerolíneas tradicionales y de bajo costo
@@ -70,7 +78,7 @@ Incluye las siguientes opciones de análisis:
 
 ## 📁 Estructura del Proyecto
 
-```
+```text
 .
 ├── README.md
 ├── requirements.txt
@@ -93,6 +101,7 @@ Incluye las siguientes opciones de análisis:
 1. **Error al activar el entorno virtual**
    - Asegúrate de estar en el directorio correcto
    - En Windows, si hay problemas con la ejecución de scripts:
+
      ```powershell
      Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
      ```
@@ -103,21 +112,3 @@ Incluye las siguientes opciones de análisis:
 
 3. **Errores de codificación**
    - Si hay problemas con caracteres especiales, verifica que los archivos estén en UTF-8
-
-## 🤝 Contribuir
-
-1. Haz fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo `LICENSE` para más detalles.
-
-## 📧 Contacto
-
-[Tu Nombre] - [tu.email@ejemplo.com]
-
-Link del proyecto: [https://github.com/tu-usuario/tu-repositorio] 
