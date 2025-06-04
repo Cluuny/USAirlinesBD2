@@ -1,0 +1,1335 @@
+airport_id,airport_code,city_market_id
+Tampa,10135,30135
+Dallas/Fort Worth,10140,30140
+Phoenix,10140,30140
+Boston,10140,30140
+Washington,10140,30140
+Chicago,10140,30140
+Houston,10140,30140
+New York City,10140,30140
+San Francisco,10140,30140
+Los Angeles,10140,30140
+New York City,10154,30154
+Dallas/Fort Worth,11109,30189
+Phoenix,11109,30189
+Washington,11109,30189
+Los Angeles,11109,30189
+Pittsburgh,11259,30194
+Pittsburgh,11298,30194
+Denver,11259,30194
+Denver,11298,30194
+Tucson,11259,30194
+Tucson,11298,30194
+Phoenix,11259,30194
+Phoenix,11298,30194
+Hartford,11259,30194
+Hartford,11298,30194
+Seattle,11259,30194
+Seattle,11298,30194
+El Paso,11259,30194
+El Paso,11298,30194
+Nashville,11259,30194
+Nashville,11298,30194
+Washington,11259,30194
+Washington,11298,30194
+St. Louis,11259,30194
+St. Louis,11298,30194
+Myrtle Beach,11259,30194
+Myrtle Beach,11298,30194
+Jacksonville,11259,30194
+Jacksonville,11298,30194
+Detroit,11259,30194
+Detroit,11298,30194
+Des Moines,11259,30194
+Des Moines,11298,30194
+Houston,11259,30194
+Houston,11298,30194
+Orlando,11259,30194
+Orlando,11298,30194
+Panama City,11259,30194
+Panama City,11298,30194
+Valparaiso,11259,30194
+Valparaiso,11298,30194
+Fresno,11259,30194
+Fresno,11298,30194
+Minneapolis/St. Paul,11259,30194
+Minneapolis/St. Paul,11298,30194
+New York City,11259,30194
+New York City,11298,30194
+Fort Myers,11259,30194
+Fort Myers,11298,30194
+Greenville/Spartanburg,11259,30194
+Greenville/Spartanburg,11298,30194
+Spokane,11259,30194
+Spokane,11298,30194
+Grand Rapids,11259,30194
+Grand Rapids,11298,30194
+Harlingen/San Benito,11259,30194
+Harlingen/San Benito,11298,30194
+Las Vegas,11259,30194
+Las Vegas,11298,30194
+Indianapolis,11259,30194
+Indianapolis,11298,30194
+San Francisco,11259,30194
+San Francisco,11298,30194
+Miami,11259,30194
+Miami,11298,30194
+Los Angeles,11259,30194
+Los Angeles,11298,30194
+Little Rock,11259,30194
+Little Rock,11298,30194
+Lubbock,11259,30194
+Lubbock,11298,30194
+Louisville,11259,30194
+Louisville,11298,30194
+Midland/Odessa,11259,30194
+Midland/Odessa,11298,30194
+Sacramento,11259,30194
+Sacramento,11298,30194
+Tampa,11259,30194
+Tampa,11298,30194
+Kansas City,11259,30194
+Kansas City,11298,30194
+San Antonio,11259,30194
+San Antonio,11298,30194
+Memphis,11259,30194
+Memphis,11298,30194
+Omaha,11259,30194
+Omaha,11298,30194
+Milwaukee,11259,30194
+Milwaukee,11298,30194
+New Orleans,11259,30194
+New Orleans,11298,30194
+San Diego,11259,30194
+San Diego,11298,30194
+Norfolk,11259,30194
+Norfolk,11298,30194
+Pensacola,11259,30194
+Pensacola,11298,30194
+West Palm Beach/Palm Beach,11259,30194
+West Palm Beach/Palm Beach,11298,30194
+Portland,11259,30194
+Portland,11298,30194
+Philadelphia,11259,30194
+Philadelphia,11298,30194
+Raleigh/Durham,11259,30194
+Raleigh/Durham,11298,30194
+Richmond,11259,30194
+Richmond,11298,30194
+Reno,11259,30194
+Reno,11298,30194
+Salt Lake City,11259,30194
+Salt Lake City,11298,30194
+Tulsa,11259,30194
+Tulsa,11298,30194
+Savannah,11259,30194
+Savannah,11298,30194
+Knoxville,11259,30194
+Knoxville,11298,30194
+San Francisco,14122,30198
+Tampa,14122,30198
+Washington,12217,30255
+Washington,10257,30257
+Chicago,10257,30257
+Miami,10257,30257
+Los Angeles,10257,30257
+Tampa,10257,30257
+Dallas/Fort Worth,10279,30279
+Phoenix,11292,30325
+Washington,11292,30325
+Houston,11292,30325
+New York City,11292,30325
+San Francisco,11292,30325
+Miami,11292,30325
+Los Angeles,11292,30325
+Tampa,11292,30325
+Norfolk,11292,30325
+Dallas/Fort Worth,10397,30397
+Phoenix,10397,30397
+Cleveland,10397,30397
+Boston,10397,30397
+Washington,10397,30397
+Chicago,10397,30397
+Columbus,10397,30397
+Houston,10397,30397
+New York City,10397,30397
+San Francisco,10397,30397
+Miami,10397,30397
+Los Angeles,10397,30397
+Tampa,10397,30397
+Norfolk,10397,30397
+Dallas/Fort Worth,10423,30423
+Phoenix,10423,30423
+Boston,10423,30423
+Washington,10423,30423
+Chicago,10423,30423
+New York City,10423,30423
+San Francisco,10423,30423
+Miami,10423,30423
+Los Angeles,10423,30423
+Tampa,10423,30423
+New York City,10431,30431
+Miami,10431,30431
+Tampa,10431,30431
+Washington,15376,30436
+Pittsburgh,10466,30466
+Pittsburgh,14107,30466
+Seattle,14107,30466
+Washington,14107,30466
+St. Louis,14107,30466
+Sioux Falls,10466,30466
+Sioux Falls,14107,30466
+Spokane,14107,30466
+San Francisco,10466,30466
+San Francisco,14107,30466
+Sacramento,14107,30466
+Tampa,14107,30466
+San Antonio,14107,30466
+San Diego,10466,30466
+San Diego,14107,30466
+Portland,14107,30466
+Raleigh/Durham,14107,30466
+Reno,14107,30466
+Salt Lake City,14107,30466
+Tulsa,14107,30466
+Phoenix,10529,30529
+Washington,10529,30529
+San Francisco,10529,30529
+Miami,10529,30529
+Los Angeles,10529,30529
+Tampa,10529,30529
+Washington,14747,30559
+Tampa,14747,30559
+Dallas/Fort Worth,10599,30599
+Washington,10599,30599
+Chicago,10599,30599
+Houston,10599,30599
+New York City,10599,30599
+Miami,10599,30599
+Los Angeles,10599,30599
+Tampa,10599,30599
+Phoenix,11540,30615
+Washington,11540,30615
+Houston,11540,30615
+New York City,11540,30615
+Los Angeles,11540,30615
+Dallas/Fort Worth,10874,30647
+Dallas/Fort Worth,11042,30647
+Denver,10874,30647
+Denver,11042,30647
+Phoenix,10874,30647
+Phoenix,11042,30647
+Seattle,10874,30647
+Seattle,11042,30647
+Nashville,10874,30647
+Nashville,11042,30647
+Washington,10874,30647
+Washington,11042,30647
+St. Louis,10874,30647
+St. Louis,11042,30647
+Myrtle Beach,10874,30647
+Myrtle Beach,11042,30647
+Houston,10874,30647
+Houston,11042,30647
+Orlando,10874,30647
+Orlando,11042,30647
+Minneapolis/St. Paul,10874,30647
+Minneapolis/St. Paul,11042,30647
+New York City,10874,30647
+New York City,11042,30647
+Fort Myers,10874,30647
+Fort Myers,11042,30647
+Las Vegas,10874,30647
+Las Vegas,11042,30647
+San Francisco,10874,30647
+San Francisco,11042,30647
+Miami,10874,30647
+Miami,11042,30647
+Los Angeles,10874,30647
+Los Angeles,11042,30647
+Tampa,10874,30647
+Tampa,11042,30647
+San Diego,10874,30647
+San Diego,11042,30647
+Philadelphia,10874,30647
+Philadelphia,11042,30647
+Sarasota/Bradenton,10874,30647
+Sarasota/Bradenton,11042,30647
+Phoenix,10693,30693
+Washington,10693,30693
+New York City,10693,30693
+San Francisco,10693,30693
+Tampa,10693,30693
+Dallas/Fort Worth,10713,30713
+Phoenix,10713,30713
+Chicago,10713,30713
+New York City,10713,30713
+San Francisco,10713,30713
+Los Angeles,10713,30713
+Dallas/Fort Worth,10721,30721
+Dallas/Fort Worth,13296,30721
+Dallas/Fort Worth,14307,30721
+Pittsburgh,10721,30721
+Pittsburgh,13296,30721
+Pittsburgh,14307,30721
+Denver,10721,30721
+Denver,13296,30721
+Denver,14307,30721
+Phoenix,10721,30721
+Phoenix,13296,30721
+Phoenix,14307,30721
+Seattle,10721,30721
+Seattle,13296,30721
+Seattle,14307,30721
+Cleveland,10721,30721
+Cleveland,13296,30721
+Cleveland,14307,30721
+Nashville,10721,30721
+Nashville,13296,30721
+Nashville,14307,30721
+Buffalo,10721,30721
+Buffalo,13296,30721
+Buffalo,14307,30721
+Bozeman,10721,30721
+Bozeman,13296,30721
+Bozeman,14307,30721
+Washington,10721,30721
+Washington,13296,30721
+Washington,14307,30721
+Chicago,10721,30721
+Chicago,13296,30721
+Chicago,14307,30721
+Charleston,10721,30721
+Charleston,13296,30721
+Charleston,14307,30721
+Charlotte,10721,30721
+Charlotte,13296,30721
+Charlotte,14307,30721
+Columbus,10721,30721
+Columbus,13296,30721
+Columbus,14307,30721
+St. Louis,10721,30721
+St. Louis,13296,30721
+St. Louis,14307,30721
+Myrtle Beach,10721,30721
+Myrtle Beach,13296,30721
+Myrtle Beach,14307,30721
+Jacksonville,10721,30721
+Jacksonville,13296,30721
+Jacksonville,14307,30721
+Detroit,10721,30721
+Detroit,13296,30721
+Detroit,14307,30721
+Houston,10721,30721
+Houston,13296,30721
+Houston,14307,30721
+Orlando,10721,30721
+Orlando,13296,30721
+Orlando,14307,30721
+Minneapolis/St. Paul,10721,30721
+Minneapolis/St. Paul,13296,30721
+Minneapolis/St. Paul,14307,30721
+New York City,10721,30721
+New York City,13296,30721
+New York City,14307,30721
+Fort Myers,10721,30721
+Fort Myers,13296,30721
+Fort Myers,14307,30721
+Las Vegas,10721,30721
+Las Vegas,13296,30721
+Las Vegas,14307,30721
+Indianapolis,10721,30721
+Indianapolis,13296,30721
+Indianapolis,14307,30721
+San Francisco,10721,30721
+San Francisco,13296,30721
+San Francisco,14307,30721
+Miami,10721,30721
+Miami,13296,30721
+Miami,14307,30721
+Los Angeles,10721,30721
+Los Angeles,13296,30721
+Los Angeles,14307,30721
+Louisville,10721,30721
+Louisville,13296,30721
+Louisville,14307,30721
+Cincinnati,10721,30721
+Cincinnati,13296,30721
+Cincinnati,14307,30721
+Sacramento,10721,30721
+Sacramento,13296,30721
+Sacramento,14307,30721
+Tampa,10721,30721
+Tampa,13296,30721
+Tampa,14307,30721
+Kansas City,10721,30721
+Kansas City,13296,30721
+Kansas City,14307,30721
+San Antonio,10721,30721
+San Antonio,13296,30721
+San Antonio,14307,30721
+Milwaukee,10721,30721
+Milwaukee,13296,30721
+Milwaukee,14307,30721
+New Orleans,10721,30721
+New Orleans,13296,30721
+New Orleans,14307,30721
+San Diego,10721,30721
+San Diego,13296,30721
+San Diego,14307,30721
+Norfolk,10721,30721
+Norfolk,13296,30721
+Norfolk,14307,30721
+West Palm Beach/Palm Beach,10721,30721
+West Palm Beach/Palm Beach,13296,30721
+West Palm Beach/Palm Beach,14307,30721
+Portland,10721,30721
+Portland,13296,30721
+Portland,14307,30721
+Philadelphia,10721,30721
+Philadelphia,13296,30721
+Philadelphia,14307,30721
+Raleigh/Durham,10721,30721
+Raleigh/Durham,13296,30721
+Raleigh/Durham,14307,30721
+Richmond,10721,30721
+Richmond,13296,30721
+Richmond,14307,30721
+Salt Lake City,10721,30721
+Salt Lake City,13296,30721
+Salt Lake City,14307,30721
+Savannah,10721,30721
+Savannah,13296,30721
+Savannah,14307,30721
+Sarasota/Bradenton,10721,30721
+Sarasota/Bradenton,13296,30721
+Sarasota/Bradenton,14307,30721
+Washington,10785,30785
+Dallas/Fort Worth,10792,30792
+Washington,10792,30792
+Chicago,10792,30792
+New York City,10792,30792
+Miami,10792,30792
+Los Angeles,10792,30792
+Tampa,10792,30792
+Dallas/Fort Worth,10849,30849
+Washington,10849,30849
+Chicago,10849,30849
+New York City,10849,30849
+San Francisco,10849,30849
+Los Angeles,10849,30849
+West Palm Beach/Palm Beach,10821,30852
+West Palm Beach/Palm Beach,11278,30852
+West Palm Beach/Palm Beach,12264,30852
+Colorado Springs,13232,30977
+Colorado Springs,13930,30977
+Dallas/Fort Worth,13232,30977
+Dallas/Fort Worth,13930,30977
+Pittsburgh,13232,30977
+Pittsburgh,13930,30977
+Denver,13232,30977
+Denver,13930,30977
+Tucson,13232,30977
+Tucson,13930,30977
+Phoenix,13232,30977
+Phoenix,13930,30977
+Hartford,13232,30977
+Hartford,13930,30977
+Seattle,13232,30977
+Seattle,13930,30977
+El Paso,13232,30977
+El Paso,13930,30977
+Cleveland,13232,30977
+Cleveland,13930,30977
+Nashville,13232,30977
+Nashville,13930,30977
+Washington,13232,30977
+Washington,13930,30977
+Columbus,13232,30977
+Columbus,13930,30977
+St. Louis,13232,30977
+St. Louis,13930,30977
+Myrtle Beach,13232,30977
+Myrtle Beach,13930,30977
+Jacksonville,13232,30977
+Jacksonville,13930,30977
+Detroit,13232,30977
+Detroit,13930,30977
+Houston,13232,30977
+Houston,13930,30977
+Orlando,13232,30977
+Orlando,13930,30977
+Valparaiso,13232,30977
+Valparaiso,13930,30977
+Fresno,13232,30977
+Fresno,13930,30977
+Minneapolis/St. Paul,13232,30977
+Minneapolis/St. Paul,13930,30977
+New York City,13232,30977
+New York City,13930,30977
+Fort Myers,13232,30977
+Fort Myers,13930,30977
+Greenville/Spartanburg,13232,30977
+Greenville/Spartanburg,13930,30977
+Spokane,13232,30977
+Spokane,13930,30977
+Las Vegas,13232,30977
+Las Vegas,13930,30977
+San Francisco,13232,30977
+San Francisco,13930,30977
+Miami,13232,30977
+Miami,13930,30977
+Los Angeles,13232,30977
+Los Angeles,13930,30977
+Louisville,13232,30977
+Louisville,13930,30977
+Cincinnati,13232,30977
+Cincinnati,13930,30977
+Sacramento,13232,30977
+Sacramento,13930,30977
+Tampa,13232,30977
+Tampa,13930,30977
+Kansas City,13232,30977
+Kansas City,13930,30977
+San Antonio,13232,30977
+San Antonio,13930,30977
+Memphis,13232,30977
+Memphis,13930,30977
+Omaha,13232,30977
+Omaha,13930,30977
+New Orleans,13232,30977
+New Orleans,13930,30977
+San Diego,13232,30977
+San Diego,13930,30977
+Norfolk,13232,30977
+Norfolk,13930,30977
+Pensacola,13232,30977
+Pensacola,13930,30977
+Oklahoma City,13232,30977
+Oklahoma City,13930,30977
+West Palm Beach/Palm Beach,13232,30977
+West Palm Beach/Palm Beach,13930,30977
+Portland,13232,30977
+Portland,13930,30977
+Philadelphia,13232,30977
+Philadelphia,13930,30977
+Raleigh/Durham,13232,30977
+Raleigh/Durham,13930,30977
+Richmond,13232,30977
+Richmond,13930,30977
+Reno,13232,30977
+Reno,13930,30977
+Salt Lake City,13232,30977
+Salt Lake City,13930,30977
+Savannah,13232,30977
+Savannah,13930,30977
+Sarasota/Bradenton,13232,30977
+Sarasota/Bradenton,13930,30977
+Syracuse,13232,30977
+Syracuse,13930,30977
+Knoxville,13232,30977
+Knoxville,13930,30977
+Dallas/Fort Worth,10994,30994
+Washington,10994,30994
+Chicago,10994,30994
+Houston,10994,30994
+New York City,10994,30994
+Miami,10994,30994
+Los Angeles,10994,30994
+Phoenix,11003,31003
+Dallas/Fort Worth,11057,31057
+Phoenix,11057,31057
+Cleveland,11057,31057
+Washington,11057,31057
+Chicago,11057,31057
+Houston,11057,31057
+New York City,11057,31057
+San Francisco,11057,31057
+Miami,11057,31057
+Los Angeles,11057,31057
+Tampa,11057,31057
+Dallas/Fort Worth,11066,31066
+Denver,11066,31066
+Phoenix,11066,31066
+Seattle,11066,31066
+Washington,11066,31066
+Myrtle Beach,11066,31066
+Myrtle Beach,12917,31066
+Houston,11066,31066
+Orlando,11066,31066
+Minneapolis/St. Paul,11066,31066
+New York City,11066,31066
+Fort Myers,11066,31066
+Las Vegas,11066,31066
+San Francisco,11066,31066
+Miami,11066,31066
+Miami,12917,31066
+Los Angeles,11066,31066
+Tampa,11066,31066
+Tampa,12917,31066
+San Diego,11066,31066
+Philadelphia,11066,31066
+Sarasota/Bradenton,11066,31066
+Sarasota/Bradenton,12917,31066
+Washington,15016,31123
+Tampa,15016,31123
+Washington,13577,31135
+New York City,13577,31135
+Washington,12451,31136
+New York City,12451,31136
+Miami,12451,31136
+Los Angeles,12451,31136
+Phoenix,11433,31295
+Washington,11433,31295
+Houston,11433,31295
+New York City,11433,31295
+San Francisco,11433,31295
+Miami,11433,31295
+Los Angeles,11433,31295
+Tampa,11433,31295
+Norfolk,11433,31295
+Phoenix,11423,31423
+Washington,11423,31423
+Los Angeles,11423,31423
+Tampa,11423,31423
+Pittsburgh,12191,31453
+Pittsburgh,12266,31453
+Phoenix,12191,31453
+Phoenix,12266,31453
+Seattle,12191,31453
+Seattle,12266,31453
+Nashville,12191,31453
+Nashville,12266,31453
+Washington,12191,31453
+Washington,12266,31453
+St. Louis,12191,31453
+St. Louis,12266,31453
+Jacksonville,12191,31453
+Jacksonville,12266,31453
+Orlando,12191,31453
+Orlando,12266,31453
+Panama City,12191,31453
+Panama City,12266,31453
+Minneapolis/St. Paul,12191,31453
+Minneapolis/St. Paul,12266,31453
+New York City,12191,31453
+New York City,12266,31453
+Las Vegas,12191,31453
+Las Vegas,12266,31453
+Indianapolis,12191,31453
+Indianapolis,12266,31453
+San Francisco,12191,31453
+San Francisco,12266,31453
+Miami,12191,31453
+Miami,12266,31453
+Los Angeles,12191,31453
+Los Angeles,12266,31453
+Lubbock,12191,31453
+Lubbock,12266,31453
+Louisville,12191,31453
+Louisville,12266,31453
+Midland/Odessa,12191,31453
+Midland/Odessa,12266,31453
+Sacramento,12191,31453
+Sacramento,12266,31453
+Tampa,12191,31453
+Tampa,12266,31453
+Kansas City,12191,31453
+Kansas City,12266,31453
+Memphis,12191,31453
+Memphis,12266,31453
+Omaha,12191,31453
+Omaha,12266,31453
+Milwaukee,12191,31453
+Milwaukee,12266,31453
+New Orleans,12191,31453
+New Orleans,12266,31453
+San Diego,12191,31453
+San Diego,12266,31453
+Norfolk,12191,31453
+Norfolk,12266,31453
+Pensacola,12191,31453
+Pensacola,12266,31453
+Oklahoma City,12191,31453
+Oklahoma City,12266,31453
+Portland,12191,31453
+Portland,12266,31453
+Philadelphia,12191,31453
+Philadelphia,12266,31453
+Raleigh/Durham,12191,31453
+Raleigh/Durham,12266,31453
+Richmond,12191,31453
+Richmond,12266,31453
+Salt Lake City,12191,31453
+Salt Lake City,12266,31453
+Tulsa,12191,31453
+Tulsa,12266,31453
+Savannah,12191,31453
+Savannah,12266,31453
+Phoenix,13204,31454
+Washington,13204,31454
+San Francisco,13204,31454
+Washington,11481,31481
+Washington,15624,31504
+Phoenix,11603,31603
+San Francisco,11603,31603
+Los Angeles,11603,31603
+Washington,11624,31624
+New York City,11624,31624
+Phoenix,11637,31637
+Los Angeles,11648,31648
+Phoenix,13487,31650
+Washington,13487,31650
+New York City,13487,31650
+San Francisco,13487,31650
+Tampa,13487,31650
+Pittsburgh,11618,31703
+Pittsburgh,12197,31703
+Pittsburgh,12391,31703
+Pittsburgh,12478,31703
+Pittsburgh,12953,31703
+Pittsburgh,15070,31703
+Phoenix,11618,31703
+Phoenix,12197,31703
+Phoenix,12391,31703
+Phoenix,12478,31703
+Phoenix,12953,31703
+Phoenix,15070,31703
+Seattle,11618,31703
+Seattle,12197,31703
+Seattle,12391,31703
+Seattle,12478,31703
+Seattle,12953,31703
+Seattle,15070,31703
+Washington,11618,31703
+Washington,12197,31703
+Washington,12391,31703
+Washington,12478,31703
+Washington,12953,31703
+Washington,15070,31703
+St. Louis,11618,31703
+St. Louis,12197,31703
+St. Louis,12391,31703
+St. Louis,12478,31703
+St. Louis,12953,31703
+St. Louis,15070,31703
+Orlando,11618,31703
+Orlando,12197,31703
+Orlando,12391,31703
+Orlando,12478,31703
+Orlando,12953,31703
+Orlando,15070,31703
+Wilmington,11618,31703
+Wilmington,12197,31703
+Wilmington,12391,31703
+Wilmington,12478,31703
+Wilmington,12953,31703
+Wilmington,15070,31703
+San Francisco,11618,31703
+San Francisco,12197,31703
+San Francisco,12391,31703
+San Francisco,12478,31703
+San Francisco,12953,31703
+San Francisco,15070,31703
+Sacramento,11618,31703
+Sacramento,12197,31703
+Sacramento,12391,31703
+Sacramento,12478,31703
+Sacramento,12953,31703
+Tampa,11618,31703
+Tampa,12197,31703
+Tampa,12391,31703
+Tampa,12478,31703
+Tampa,12953,31703
+Tampa,15070,31703
+San Antonio,11618,31703
+San Antonio,12197,31703
+San Antonio,12391,31703
+San Antonio,12478,31703
+San Antonio,12953,31703
+San Antonio,15070,31703
+Omaha,11618,31703
+Omaha,12197,31703
+Omaha,12391,31703
+Omaha,12478,31703
+Omaha,12953,31703
+San Diego,11618,31703
+San Diego,12197,31703
+San Diego,12391,31703
+San Diego,12478,31703
+San Diego,12953,31703
+San Diego,15070,31703
+Norfolk,11618,31703
+Norfolk,12197,31703
+Norfolk,12391,31703
+Norfolk,12478,31703
+Norfolk,12953,31703
+Norfolk,15070,31703
+Pensacola,11618,31703
+Pensacola,12197,31703
+Pensacola,12391,31703
+Pensacola,12478,31703
+Pensacola,12953,31703
+Pensacola,15070,31703
+Oklahoma City,11618,31703
+Oklahoma City,12197,31703
+Oklahoma City,12391,31703
+Oklahoma City,12478,31703
+Oklahoma City,12953,31703
+Oklahoma City,15070,31703
+West Palm Beach/Palm Beach,11618,31703
+West Palm Beach/Palm Beach,12197,31703
+West Palm Beach/Palm Beach,12391,31703
+West Palm Beach/Palm Beach,12478,31703
+West Palm Beach/Palm Beach,12953,31703
+West Palm Beach/Palm Beach,15070,31703
+Portland,11618,31703
+Portland,12197,31703
+Portland,12391,31703
+Portland,12478,31703
+Portland,12953,31703
+Portland,15070,31703
+Raleigh/Durham,11618,31703
+Raleigh/Durham,12197,31703
+Raleigh/Durham,12391,31703
+Raleigh/Durham,12478,31703
+Raleigh/Durham,12953,31703
+Raleigh/Durham,15070,31703
+Richmond,11618,31703
+Richmond,12197,31703
+Richmond,12391,31703
+Richmond,12478,31703
+Richmond,12953,31703
+Richmond,15070,31703
+Reno,11618,31703
+Reno,12197,31703
+Reno,12391,31703
+Reno,12478,31703
+Reno,12953,31703
+Rochester,11618,31703
+Rochester,12197,31703
+Rochester,12391,31703
+Rochester,12478,31703
+Rochester,12953,31703
+Salt Lake City,11618,31703
+Salt Lake City,12197,31703
+Salt Lake City,12391,31703
+Salt Lake City,12478,31703
+Salt Lake City,12953,31703
+Savannah,11618,31703
+Savannah,12197,31703
+Savannah,12391,31703
+Savannah,12478,31703
+Savannah,12953,31703
+Savannah,15070,31703
+Sarasota/Bradenton,11618,31703
+Sarasota/Bradenton,12197,31703
+Sarasota/Bradenton,12391,31703
+Sarasota/Bradenton,12478,31703
+Sarasota/Bradenton,12953,31703
+Sarasota/Bradenton,15070,31703
+Syracuse,11618,31703
+Syracuse,12391,31703
+Syracuse,12478,31703
+Syracuse,12953,31703
+Traverse City,11618,31703
+Traverse City,12197,31703
+Traverse City,12391,31703
+Traverse City,12478,31703
+Traverse City,12953,31703
+Washington,14635,31714
+Houston,14635,31714
+New York City,14635,31714
+Los Angeles,14635,31714
+Washington,11996,31871
+Houston,11996,31871
+New York City,11996,31871
+Phoenix,11986,31986
+Washington,11986,31986
+New York City,11986,31986
+Los Angeles,11986,31986
+Tampa,11986,31986
+New York City,11995,31995
+Phoenix,12889,32211
+Washington,12889,32211
+New York City,12889,32211
+San Francisco,12889,32211
+Miami,12889,32211
+Los Angeles,12889,32211
+Tampa,12889,32211
+Norfolk,12889,32211
+Phoenix,12339,32337
+Washington,12339,32337
+New York City,12339,32337
+San Francisco,12339,32337
+Miami,12339,32337
+Los Angeles,12339,32337
+Tampa,12339,32337
+New York City,12441,32441
+Los Angeles,12441,32441
+Washington,12448,32448
+Tucson,13796,32457
+Tucson,14771,32457
+Tucson,14831,32457
+Seattle,13796,32457
+Seattle,14771,32457
+Seattle,14831,32457
+Washington,13796,32457
+Washington,14771,32457
+Washington,14831,32457
+St. Louis,13796,32457
+St. Louis,14771,32457
+St. Louis,14831,32457
+Spokane,13796,32457
+Spokane,14771,32457
+Spokane,14831,32457
+Tampa,13796,32457
+Tampa,14771,32457
+Tampa,14831,32457
+Santa Barbara,13796,32457
+Santa Barbara,14771,32457
+Santa Barbara,14831,32457
+Pittsburgh,11697,32467
+Pittsburgh,13303,32467
+Phoenix,11697,32467
+Phoenix,13303,32467
+Seattle,11697,32467
+Seattle,13303,32467
+Nashville,11697,32467
+Nashville,13303,32467
+Washington,11697,32467
+Washington,13303,32467
+St. Louis,11697,32467
+St. Louis,13303,32467
+Orlando,11697,32467
+Orlando,13303,32467
+Minneapolis/St. Paul,11697,32467
+Minneapolis/St. Paul,13303,32467
+New York City,11697,32467
+New York City,13303,32467
+San Francisco,11697,32467
+San Francisco,13303,32467
+Sacramento,11697,32467
+Sacramento,13303,32467
+Tampa,11697,32467
+Tampa,13303,32467
+San Antonio,11697,32467
+San Antonio,13303,32467
+Milwaukee,11697,32467
+Milwaukee,13303,32467
+New Orleans,11697,32467
+New Orleans,13303,32467
+San Diego,11697,32467
+San Diego,13303,32467
+Norfolk,11697,32467
+Norfolk,13303,32467
+Portland,11697,32467
+Portland,13303,32467
+Philadelphia,11697,32467
+Philadelphia,13303,32467
+Raleigh/Durham,11697,32467
+Raleigh/Durham,13303,32467
+Richmond,11697,32467
+Richmond,13303,32467
+Salt Lake City,11697,32467
+Salt Lake City,13303,32467
+Syracuse,11697,32467
+Syracuse,13303,32467
+Tallahassee,11697,32467
+Tallahassee,13303,32467
+Pittsburgh,10800,32575
+Pittsburgh,12892,32575
+Pittsburgh,12954,32575
+Pittsburgh,13891,32575
+Pittsburgh,14908,32575
+Tucson,10800,32575
+Tucson,12892,32575
+Tucson,12954,32575
+Tucson,13891,32575
+Tucson,14908,32575
+Phoenix,10800,32575
+Phoenix,12892,32575
+Phoenix,12954,32575
+Phoenix,13891,32575
+Phoenix,14908,32575
+Seattle,10800,32575
+Seattle,12892,32575
+Seattle,12954,32575
+Seattle,13891,32575
+Seattle,14908,32575
+Nashville,10800,32575
+Nashville,12892,32575
+Nashville,12954,32575
+Nashville,13891,32575
+Nashville,14908,32575
+Washington,10800,32575
+Washington,12892,32575
+Washington,12954,32575
+Washington,13891,32575
+Washington,14908,32575
+Wichita,10800,32575
+Wichita,12892,32575
+Wichita,12954,32575
+Wichita,13891,32575
+Wichita,14908,32575
+St. Louis,10800,32575
+St. Louis,12892,32575
+St. Louis,12954,32575
+St. Louis,13891,32575
+St. Louis,14908,32575
+Orlando,10800,32575
+Orlando,12892,32575
+Orlando,12954,32575
+Orlando,13891,32575
+Orlando,14908,32575
+Minneapolis/St. Paul,10800,32575
+Minneapolis/St. Paul,12892,32575
+Minneapolis/St. Paul,12954,32575
+Minneapolis/St. Paul,13891,32575
+Minneapolis/St. Paul,14908,32575
+New York City,10800,32575
+New York City,12892,32575
+New York City,12954,32575
+New York City,13891,32575
+New York City,14908,32575
+Spokane,10800,32575
+Spokane,12892,32575
+Spokane,12954,32575
+Spokane,13891,32575
+Spokane,14908,32575
+San Francisco,10800,32575
+San Francisco,12892,32575
+San Francisco,12954,32575
+San Francisco,13891,32575
+San Francisco,14908,32575
+Miami,10800,32575
+Miami,12892,32575
+Miami,12954,32575
+Miami,13891,32575
+Miami,14908,32575
+Louisville,10800,32575
+Louisville,12892,32575
+Louisville,12954,32575
+Louisville,13891,32575
+Louisville,14908,32575
+Sacramento,10800,32575
+Sacramento,12892,32575
+Sacramento,12954,32575
+Sacramento,13891,32575
+Sacramento,14908,32575
+Tampa,10800,32575
+Tampa,12892,32575
+Tampa,12954,32575
+Tampa,13891,32575
+Tampa,14908,32575
+San Antonio,10800,32575
+San Antonio,12892,32575
+San Antonio,12954,32575
+San Antonio,13891,32575
+San Antonio,14908,32575
+Memphis,10800,32575
+Memphis,12892,32575
+Memphis,12954,32575
+Memphis,13891,32575
+Memphis,14908,32575
+Medford,10800,32575
+Medford,12892,32575
+Medford,12954,32575
+Medford,13891,32575
+Medford,14908,32575
+Omaha,10800,32575
+Omaha,12892,32575
+Omaha,12954,32575
+Omaha,13891,32575
+Omaha,14908,32575
+Milwaukee,10800,32575
+Milwaukee,12892,32575
+Milwaukee,12954,32575
+Milwaukee,13891,32575
+Milwaukee,14908,32575
+Missoula,10800,32575
+Missoula,12892,32575
+Missoula,12954,32575
+Missoula,13891,32575
+Missoula,14908,32575
+New Orleans,10800,32575
+New Orleans,12892,32575
+New Orleans,12954,32575
+New Orleans,13891,32575
+New Orleans,14908,32575
+Norfolk,10800,32575
+Norfolk,12892,32575
+Norfolk,12954,32575
+Norfolk,13891,32575
+Norfolk,14908,32575
+Oklahoma City,10800,32575
+Oklahoma City,12892,32575
+Oklahoma City,12954,32575
+Oklahoma City,13891,32575
+Oklahoma City,14908,32575
+West Palm Beach/Palm Beach,10800,32575
+West Palm Beach/Palm Beach,12892,32575
+West Palm Beach/Palm Beach,12954,32575
+West Palm Beach/Palm Beach,13891,32575
+West Palm Beach/Palm Beach,14908,32575
+Portland,10800,32575
+Portland,12892,32575
+Portland,12954,32575
+Portland,13891,32575
+Portland,14908,32575
+Philadelphia,10800,32575
+Philadelphia,12892,32575
+Philadelphia,12954,32575
+Philadelphia,13891,32575
+Philadelphia,14908,32575
+Santa Rosa,10800,32575
+Santa Rosa,12892,32575
+Santa Rosa,13891,32575
+Santa Rosa,14908,32575
+Raleigh/Durham,10800,32575
+Raleigh/Durham,12892,32575
+Raleigh/Durham,12954,32575
+Raleigh/Durham,13891,32575
+Raleigh/Durham,14908,32575
+Richmond,10800,32575
+Richmond,12892,32575
+Richmond,12954,32575
+Richmond,13891,32575
+Richmond,14908,32575
+Reno,10800,32575
+Reno,12892,32575
+Reno,12954,32575
+Reno,13891,32575
+Reno,14908,32575
+Salt Lake City,10800,32575
+Salt Lake City,12892,32575
+Salt Lake City,12954,32575
+Salt Lake City,13891,32575
+Salt Lake City,14908,32575
+Tulsa,10800,32575
+Tulsa,12892,32575
+Tulsa,12954,32575
+Tulsa,13891,32575
+Tulsa,14908,32575
+Savannah,10800,32575
+Savannah,12892,32575
+Savannah,12954,32575
+Savannah,13891,32575
+Savannah,14908,32575
+Syracuse,10800,32575
+Syracuse,12892,32575
+Syracuse,12954,32575
+Syracuse,13891,32575
+Syracuse,14908,32575
+Los Angeles,12992,32600
+Washington,14730,33044
+New York City,14730,33044
+Miami,14730,33044
+Tampa,14730,33044
+Dallas/Fort Worth,11193,33105
+Phoenix,11193,33105
+Washington,11193,33105
+Houston,11193,33105
+New York City,11193,33105
+San Francisco,11193,33105
+Miami,11193,33105
+Los Angeles,11193,33105
+Tampa,11193,33105
+Washington,14893,33192
+Washington,14112,33195
+Washington,15304,33195
+Phoenix,13198,33198
+Washington,13198,33198
+New York City,13198,33198
+San Francisco,13198,33198
+Miami,13198,33198
+Los Angeles,13198,33198
+Tampa,13198,33198
+Washington,14683,33214
+San Francisco,14683,33214
+Tampa,14683,33214
+Phoenix,13244,33244
+Washington,13244,33244
+New York City,13244,33244
+Miami,13244,33244
+Phoenix,13871,33316
+Washington,13871,33316
+San Francisco,13871,33316
+Tampa,13871,33316
+Phoenix,13342,33342
+Washington,13342,33342
+New York City,13342,33342
+San Francisco,13342,33342
+Tampa,13342,33342
+New York City,13485,33485
+Phoenix,13495,33495
+Washington,13495,33495
+New York City,13495,33495
+San Francisco,13495,33495
+Tampa,13495,33495
+New York City,13541,33541
+Washington,14679,33570
+San Francisco,14679,33570
+Tampa,14679,33570
+Seattle,13931,33667
+Seattle,14098,33667
+Orlando,13931,33667
+Orlando,14098,33667
+Tampa,13931,33667
+Tampa,14098,33667
+San Diego,13931,33667
+San Diego,14098,33667
+Washington,14193,33728
+Phoenix,13851,33851
+Washington,13851,33851
+Washington,14057,34057
+San Francisco,14057,34057
+Tampa,14057,34057
+Phoenix,14100,34100
+San Francisco,14100,34100
+Tampa,14100,34100
+San Francisco,14262,34262
+Washington,14321,34321
+San Francisco,14489,34489
+Los Angeles,14489,34489
+Washington,14492,34492
+San Francisco,14492,34492
+Tampa,14492,34492
+Washington,14570,34570
+Washington,14576,34576
+Washington,14869,34614
+San Francisco,14869,34614
+Tampa,14869,34614
+Washington,14685,34685
+Tampa,14783,34783
+Washington,14986,34986
+Tampa,15096,35096
+New York City,15412,35412
+Miami,15412,35412
+Tampa,15412,35412
+Greensboro/High Point,11259,30194
+Greensboro/High Point,11298,30194
+Mission/McAllen/Edinburg,11298,30194
+Palm Springs,11259,30194
+Palm Springs,11298,30194
+Washington,14122,30198
+Cleveland,10423,30423
+Columbus,10423,30423
+Houston,10423,30423
+Wichita,10466,30466
+Wichita,14107,30466
+Spokane,10466,30466
+Tampa,10466,30466
+Provo,10466,30466
+Provo,14107,30466
+Tulsa,10466,30466
+Houston,10529,30529
+Phoenix,10627,30627
+ FL (Metropolitan Area),14112,33195
+ FL (Metropolitan Area),15304,33195
+ TX,11259,30194
+ TX,11298,30194
+ AZ,14107,30466
+ MA (Metropolitan Area),10721,30721
+ MA (Metropolitan Area),13296,30721
+ MA (Metropolitan Area),14307,30721
+ DC (Metropolitan Area),10821,30852
+ DC (Metropolitan Area),11278,30852
+ DC (Metropolitan Area),12264,30852
+ IL,13232,30977
+ IL,13930,30977
+ TX,12191,31453
+ TX,12266,31453
+ NY (Metropolitan Area),11618,31703
+ NY (Metropolitan Area),12197,31703
+ NY (Metropolitan Area),12391,31703
+ NY (Metropolitan Area),12478,31703
+ NY (Metropolitan Area),12953,31703
+ NY (Metropolitan Area),15070,31703
+ CA (Metropolitan Area),13796,32457
+ CA (Metropolitan Area),14771,32457
+ CA (Metropolitan Area),14831,32457
+ CA (Metropolitan Area),10800,32575
+ CA (Metropolitan Area),12892,32575
+ CA (Metropolitan Area),12954,32575
+ CA (Metropolitan Area),13891,32575
+ CA (Metropolitan Area),14908,32575
+ PA,14122,30198
+ CO,11292,30325
+ AZ,15376,30436
+ CT,10529,30529
+ WA,14747,30559
+ TX,11540,30615
+ TN,10693,30693
+ MO,15016,31123
+ SC,13577,31135
+ FL,12451,31136
+ MI,11433,31295
+ IA,11423,31423
+ FL,13204,31454
+ FL,11481,31481
+ FL,15624,31504
+ CA,11638,31638
+ MN,13487,31650
+ FL,14635,31714
+ SC,11996,31871
+ WA,11884,31884
+ MI,11986,31986
+ TX,12206,32206
+ NV,12889,32211
+ IN,12339,32337
+ FL (Metropolitan Area),11697,32467
+ FL (Metropolitan Area),13303,32467
+ AR,12992,32600
+ TX,12896,32896
+ KY,14730,33044
+ TX,13158,33158
+ CA,14893,33192
+ MO,13198,33198
+ TX,14683,33214
+ TN,13244,33244
+ NE,13871,33316
+ WI,13342,33342
+ LA,13495,33495
+ CA,14679,33570
+ VA (Metropolitan Area),13931,33667
+ VA (Metropolitan Area),14098,33667
+ FL,14193,33728
+ FL,14027,34027
+ OR,14057,34057
+ PA,14100,34100
+ NC,14492,34492
+ VA,14524,34524
+ NV,14570,34570
+ UT,14869,34614
+ OK,15370,34653
+ GA,14685,34685
+ TN,15412,35412
+ OH (Metropolitan Area),10874,30647
+ OH (Metropolitan Area),11042,30647
+ OH,11066,31066
+ SD,11775,31775
+ FL,14986,34986
+ AZ,10466,30466
+ NY,10792,30792
+ MT,10849,30849
+ SC,10994,30994
+ NC,11057,31057
+ OH,11193,33105
+ CO,11109,30189
+ OK,13851,33851
+ ME,14321,34321
+ NY,15096,35096
+ NC,12323,32323
+ NY,14576,34576
+ MI,15380,35380
+ CA,14689,34689
+ FL,15249,35249
+ KS,12278,30928
+ OR,13264,33264
+ MT,13486,33486
+ CA,15023,34433
+ NC,11995,31995
+ TX,13256,33256
+ CA,14262,34262
+ UT,14314,34314

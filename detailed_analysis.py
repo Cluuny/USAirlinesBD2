@@ -7,8 +7,13 @@ import seaborn as sns
 def load_data():
     """Carga y preprocesa el dataset."""
     file_path = 'archive/US Airline Flight Routes and Fares 1993-2024.csv'
-    df = pd.read_csv(file_path, sep=';', encoding='utf-8', on_bad_lines='skip')
-    return df
+    try:
+        df = pd.read_csv(file_path, sep=',', encoding='utf-8', on_bad_lines='skip', low_memory=False)
+        print(f"Dataset cargado exitosamente: {len(df)} registros, {len(df.columns)} columnas")
+        return df
+    except Exception as e:
+        print(f"Error al cargar los datos: {e}")
+        return None
 
 def analyze_temporal_trends(df):
     """Analiza tendencias temporales en precios y pasajeros."""
@@ -91,6 +96,10 @@ def analyze_seasonal_patterns(df):
 def main():
     print("Cargando datos...")
     df = load_data()
+    
+    if df is None:
+        print("No se pudieron cargar los datos. Saliendo...")
+        return
     
     while True:
         print("\n=== MENÚ DE ANÁLISIS ===")
