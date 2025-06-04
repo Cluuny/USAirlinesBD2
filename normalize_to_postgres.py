@@ -38,6 +38,23 @@ class AirlineDataNormalizer:
             print(f"Loaded {len(self.df)} records with {len(self.df.columns)} columns")
             initial_count = len(self.df)
 
+            # --- FARE RAW DATA INSPECTION (Commenting out as its purpose is served) ---
+            # print("\\nDEBUG: --- FARE RAW Data Inspection (First 50 unique values) ---")
+            # fare_cols_to_inspect = ['fare_lg', 'fare_low']
+            # for col_name in fare_cols_to_inspect:
+            #     if col_name in self.df.columns:
+            #         print(f"DEBUG: RAW unique values for '{col_name}':")
+            #         try:
+            #             # Temporarily convert to string to see unique raw values, handling potential mixed types
+            #             unique_vals = self.df[col_name].astype(str).unique()
+            #             print(unique_vals[:50]) # Show first 50 unique raw string values
+            #         except Exception as e_unique:
+            #             print(f"  Could not get unique values for {col_name}: {e_unique}")
+            #     else:
+            #         print(f"DEBUG: Column '{col_name}' not found in CSV.")
+            # print("DEBUG: --- End FARE RAW Data Inspection ---\\n")
+            # --- END FARE RAW DATA INSPECTION ---
+
             # --- RAW DATA INSPECTION (Keeping this for reference if needed later, but commenting out for normal runs) ---
             # print("\\nDEBUG: --- RAW Data Inspection (First 50 unique values) ---")
             # problem_cols = ['passengers', 'nsmiles', 'carrier_lg', 'carrier_low', 'city1', 'city2']
@@ -354,7 +371,7 @@ class AirlineDataNormalizer:
                     'carrier_id': carrier_mapping[row['carrier_lg']],
                     'market_share_type': 'Legacy',
                     'market_share_percentage': row['large_ms'], # numeric
-                    'fare_avg': row['fare_lg'] # numeric
+                    'fare_avg': row['fare'] # Changed from row['fare_lg'] to use main flight fare
                 })
             if pd.notna(row['carrier_low']) and row['carrier_low'] in carrier_mapping:
                  market_shares_list.append({
@@ -362,7 +379,7 @@ class AirlineDataNormalizer:
                     'carrier_id': carrier_mapping[row['carrier_low']],
                     'market_share_type': 'Low-Cost',
                     'market_share_percentage': row['lf_ms'], # numeric
-                    'fare_avg': row['fare_low'] # numeric
+                    'fare_avg': row['fare'] # Changed from row['fare_low'] to use main flight fare
                 })
         self.tables['market_share'] = pd.DataFrame(market_shares_list)
         if not self.tables['market_share'].empty:
