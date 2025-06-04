@@ -460,44 +460,46 @@ class AirlineDataNormalizer:
             # carrier_lg/low are already cleaned by validate_and_clean_carrier_code
             # They will be NaN if invalid, or the code string if valid.
             if pd.notna(row['carrier_lg']) and row['carrier_lg'] in carrier_mapping:
-                # Fix: Use carrier-specific fare data
-                # large_ms appears to be the actual fare for legacy carriers
-                # large_ms column contains fare values, not market share percentages
-                legacy_fare = row['large_ms'] if pd.notna(row['large_ms']) else row['fare']
+                # Fix: Correctly map market share and fare data
+                # large_ms = market share percentage for legacy carriers
+                # fare = generic fare for the route
+                legacy_market_share = row['large_ms'] if pd.notna(row['large_ms']) else None
                 
                 market_shares_list.append({
                     'flight_id': flight_id,
                     'carrier_id': carrier_mapping[row['carrier_lg']],
                     'market_share_type': 'Legacy',
-                    'market_share_percentage': None,  # Fix: No actual market share % in source data
-                    'fare_avg': legacy_fare  # Fix: Use Legacy-specific fare
+                    'market_share_percentage': legacy_market_share,  # Fix: Use large_ms as market share
+                    'fare_avg': row['fare']  # Fix: Use generic fare column
                 })
                 
             if pd.notna(row['carrier_low']) and row['carrier_low'] in carrier_mapping:
-                # Fix: Use carrier-specific fare data  
-                # lf_ms appears to be the actual fare for low-cost carriers
-                # lf_ms column contains fare values, not market share percentages
-                lowcost_fare = row['lf_ms'] if pd.notna(row['lf_ms']) else row['fare']
+                # Fix: Correctly map market share and fare data
+                # lf_ms = market share percentage for low-cost carriers  
+                # fare = generic fare for the route
+                lowcost_market_share = row['lf_ms'] if pd.notna(row['lf_ms']) else None
                 
                 market_shares_list.append({
                     'flight_id': flight_id,
                     'carrier_id': carrier_mapping[row['carrier_low']],
                     'market_share_type': 'Low-Cost',
-                    'market_share_percentage': None,  # Fix: No actual market share % in source data  
-                    'fare_avg': lowcost_fare  # Fix: Use Low-Cost-specific fare
+                    'market_share_percentage': lowcost_market_share,  # Fix: Use lf_ms as market share
+                    'fare_avg': row['fare']  # Fix: Use generic fare column
                 })
                 
         self.tables['market_share'] = pd.DataFrame(market_shares_list)
         if not self.tables['market_share'].empty:
             self.tables['market_share'] = self.tables['market_share'].drop_duplicates(subset=['flight_id', 'carrier_id', 'market_share_type'])
             
-            # Debug: Show fare comparison
-            print("Sample carrier-specific fares:")
+            # Debug: Show market share and fare data properly
+            print("Sample market share data (correctly mapped):")
             sample_data = self.tables['market_share'].head()
             for _, record in sample_data.iterrows():
                 carrier_id = record['carrier_id']
                 carrier_code = self.tables['carriers'][self.tables['carriers']['carrier_id'] == carrier_id]['carrier_code'].iloc[0]
-                print(f"  {carrier_code} ({record['market_share_type']}): ${record['fare_avg']:.0f}")
+                market_share = record['market_share_percentage']
+                fare = record['fare_avg']
+                print(f"  {carrier_code} ({record['market_share_type']}): {market_share} market share, ${fare:.0f} fare")
                 
         print(f"Created Market Share DataFrame with {len(self.tables['market_share'])} records")
 
