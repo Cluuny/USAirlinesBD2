@@ -246,3 +246,31 @@ log/
 
 # Archivos grandes de datos (opcional, depende de si quieres incluir el dataset en el repo)
 # archive/*.csv
+
+# Project specific files
+config.py
+*.db
+*.sqlite
+*.sqlite3
+
+# Data files (optional - uncomment if you want to ignore data files)
+# archive/*.csv
+# archive/*.xlsx
+# normalized_data/*.csv
+
+# Temporary files
+temp/
+tmp/
+*.temp
+
+# Output files
+output/
+results/
+reports/
+
+# IDE specific files
+.vscode/settings.json
+.vscode/launch.json
+
+# OS specific files
+desktop.ini

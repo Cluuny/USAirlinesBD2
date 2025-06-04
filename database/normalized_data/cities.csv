@@ -1,0 +1,594 @@
+city_market_id,city_name,state,full_city_name
+30135,Allentown/Bethlehem/Easton,,Allentown/Bethlehem/Easton
+30140,Albuquerque,,Albuquerque
+30154,Nantucket,,Nantucket
+30189,Colorado Springs,,Colorado Springs
+30194,Dallas/Fort Worth,,Dallas/Fort Worth
+30198,Pittsburgh,,Pittsburgh
+30255,Huntsville,,Huntsville
+30257,Albany,,Albany
+30279,Amarillo,,Amarillo
+30325,Denver,,Denver
+30397,Atlanta,,Atlanta
+30423,Austin,,Austin
+30431,Asheville,,Asheville
+30436,Tucson,,Tucson
+30466,Phoenix,,Phoenix
+30529,Hartford,,Hartford
+30559,Seattle,,Seattle
+30599,Birmingham,,Birmingham
+30615,El Paso,,El Paso
+30647,Cleveland,,Cleveland
+30693,Nashville,,Nashville
+30713,Boise,,Boise
+30721,Boston,,Boston
+30785,Burlington,,Burlington
+30792,Buffalo,,Buffalo
+30849,Bozeman,,Bozeman
+30852,Washington,,Washington
+30977,Chicago,,Chicago
+30994,Charleston,,Charleston
+31003,Cedar Rapids/Iowa City,,Cedar Rapids/Iowa City
+31057,Charlotte,,Charlotte
+31066,Columbus,,Columbus
+31123,St. Louis,,St. Louis
+31135,Myrtle Beach,,Myrtle Beach
+31136,Jacksonville,,Jacksonville
+31295,Detroit,,Detroit
+31423,Des Moines,,Des Moines
+31453,Houston,,Houston
+31454,Orlando,,Orlando
+31481,Panama City,,Panama City
+31504,Valparaiso,,Valparaiso
+31603,Eugene,,Eugene
+31624,Key West,,Key West
+31637,Fargo,,Fargo
+31648,Kalispell,,Kalispell
+31650,Minneapolis/St. Paul,,Minneapolis/St. Paul
+31703,New York City,,New York City
+31714,Fort Myers,,Fort Myers
+31871,Greenville/Spartanburg,,Greenville/Spartanburg
+31986,Grand Rapids,,Grand Rapids
+31995,Greensboro/High Point,,Greensboro/High Point
+32211,Las Vegas,,Las Vegas
+32337,Indianapolis,,Indianapolis
+32441,Jackson,,Jackson
+32448,Jackson/Vicksburg,,Jackson/Vicksburg
+32457,San Francisco,,San Francisco
+32467,Miami,,Miami
+32575,Los Angeles,,Los Angeles
+32600,Little Rock,,Little Rock
+33044,Louisville,,Louisville
+33105,Cincinnati,,Cincinnati
+33192,Sacramento,,Sacramento
+33195,Tampa,,Tampa
+33198,Kansas City,,Kansas City
+33214,San Antonio,,San Antonio
+33244,Memphis,,Memphis
+33316,Omaha,,Omaha
+33342,Milwaukee,,Milwaukee
+33485,Madison,,Madison
+33495,New Orleans,,New Orleans
+33541,Martha's Vineyard,,Martha's Vineyard
+33570,San Diego,,San Diego
+33667,Norfolk,,Norfolk
+33728,Pensacola,,Pensacola
+33851,Oklahoma City,,Oklahoma City
+34057,Portland,,Portland
+34100,Philadelphia,,Philadelphia
+34262,Palm Springs,,Palm Springs
+34321,Portland,,Portland
+34489,Bend/Redmond,,Bend/Redmond
+34492,Raleigh/Durham,,Raleigh/Durham
+34570,Reno,,Reno
+34576,Rochester,,Rochester
+34614,Salt Lake City,,Salt Lake City
+34685,Savannah,,Savannah
+34783,Springfield,,Springfield
+34986,Sarasota/Bradenton,,Sarasota/Bradenton
+35096,Syracuse,,Syracuse
+35412,Knoxville,,Knoxville
+30627,Bismarck/Mandan,,Bismarck/Mandan
+33195, PA,, PA
+30194, NM,, NM
+30466, NM,, NM
+30721, NM,, NM
+30852, NM,, NM
+30977, NM,, NM
+31453, NM,, NM
+31703, NM,, NM
+32457, NM,, NM
+32575, NM,, NM
+31703, MA,, MA
+30194, CO,, CO
+30466, CO,, CO
+30852, CO,, CO
+32575, CO,, CO
+30198, TX,, TX
+30325, TX,, TX
+30436, TX,, TX
+30466, TX,, TX
+30529, TX,, TX
+30559, TX,, TX
+30615, TX,, TX
+30693, TX,, TX
+30852, TX,, TX
+31123, TX,, TX
+31135, TX,, TX
+31136, TX,, TX
+31295, TX,, TX
+31423, TX,, TX
+31453, TX,, TX
+31454, TX,, TX
+31481, TX,, TX
+31504, TX,, TX
+31638, TX,, TX
+31650, TX,, TX
+31703, TX,, TX
+31714, TX,, TX
+31871, TX,, TX
+31884, TX,, TX
+31986, TX,, TX
+32206, TX,, TX
+32211, TX,, TX
+32337, TX,, TX
+32457, TX,, TX
+32467, TX,, TX
+32575, TX,, TX
+32600, TX,, TX
+32896, TX,, TX
+33044, TX,, TX
+33158, TX,, TX
+33192, TX,, TX
+33195, TX,, TX
+33198, TX,, TX
+33214, TX,, TX
+33244, TX,, TX
+33316, TX,, TX
+33342, TX,, TX
+33495, TX,, TX
+33570, TX,, TX
+33667, TX,, TX
+33728, TX,, TX
+34027, TX,, TX
+34057, TX,, TX
+34100, TX,, TX
+34492, TX,, TX
+34524, TX,, TX
+34570, TX,, TX
+34614, TX,, TX
+34653, TX,, TX
+34685, TX,, TX
+35412, TX,, TX
+32457, PA,, PA
+30852, AL,, AL
+30852, NY,, NY
+30977, NY,, NY
+32467, NY,, NY
+32575, NY,, NY
+33195, NY,, NY
+30194, TX,, TX
+31453, CO,, CO
+31703, CO,, CO
+32457, CO,, CO
+32467, CO,, CO
+33195, CO,, CO
+33667, CO,, CO
+30194, GA (Metropolitan Area),, GA (Metropolitan Area)
+30466, GA (Metropolitan Area),, GA (Metropolitan Area)
+30647, GA (Metropolitan Area),, GA (Metropolitan Area)
+30721, GA (Metropolitan Area),, GA (Metropolitan Area)
+30852, GA (Metropolitan Area),, GA (Metropolitan Area)
+30977, GA (Metropolitan Area),, GA (Metropolitan Area)
+31066, GA (Metropolitan Area),, GA (Metropolitan Area)
+31453, GA (Metropolitan Area),, GA (Metropolitan Area)
+31703, GA (Metropolitan Area),, GA (Metropolitan Area)
+32457, GA (Metropolitan Area),, GA (Metropolitan Area)
+32467, GA (Metropolitan Area),, GA (Metropolitan Area)
+32575, GA (Metropolitan Area),, GA (Metropolitan Area)
+33195, GA (Metropolitan Area),, GA (Metropolitan Area)
+33667, GA (Metropolitan Area),, GA (Metropolitan Area)
+30721, TX,, TX
+30977, TX,, TX
+31703, NC,, NC
+32467, NC,, NC
+33195, NC,, NC
+30852, AZ,, AZ
+30198, AZ,, AZ
+30559, AZ,, AZ
+31123, AZ,, AZ
+31775, AZ,, AZ
+31884, AZ,, AZ
+32457, AZ,, AZ
+33192, AZ,, AZ
+33195, AZ,, AZ
+33214, AZ,, AZ
+33570, AZ,, AZ
+34057, AZ,, AZ
+34492, AZ,, AZ
+34570, AZ,, AZ
+34614, AZ,, AZ
+34653, AZ,, AZ
+30466, CT,, CT
+30852, CT,, CT
+32457, CT,, CT
+32467, CT,, CT
+32575, CT,, CT
+33195, CT,, CT
+30852, WA,, WA
+33195, WA,, WA
+30194, AL,, AL
+30977, AL,, AL
+31453, AL,, AL
+31703, AL,, AL
+32467, AL,, AL
+32575, AL,, AL
+33195, AL,, AL
+30194, OH (Metropolitan Area),, OH (Metropolitan Area)
+30325, OH (Metropolitan Area),, OH (Metropolitan Area)
+30466, OH (Metropolitan Area),, OH (Metropolitan Area)
+30559, OH (Metropolitan Area),, OH (Metropolitan Area)
+30693, OH (Metropolitan Area),, OH (Metropolitan Area)
+30852, OH (Metropolitan Area),, OH (Metropolitan Area)
+31123, OH (Metropolitan Area),, OH (Metropolitan Area)
+31135, OH (Metropolitan Area),, OH (Metropolitan Area)
+31453, OH (Metropolitan Area),, OH (Metropolitan Area)
+31454, OH (Metropolitan Area),, OH (Metropolitan Area)
+31650, OH (Metropolitan Area),, OH (Metropolitan Area)
+31703, OH (Metropolitan Area),, OH (Metropolitan Area)
+31714, OH (Metropolitan Area),, OH (Metropolitan Area)
+32211, OH (Metropolitan Area),, OH (Metropolitan Area)
+32457, OH (Metropolitan Area),, OH (Metropolitan Area)
+32467, OH (Metropolitan Area),, OH (Metropolitan Area)
+32575, OH (Metropolitan Area),, OH (Metropolitan Area)
+33195, OH (Metropolitan Area),, OH (Metropolitan Area)
+33570, OH (Metropolitan Area),, OH (Metropolitan Area)
+34100, OH (Metropolitan Area),, OH (Metropolitan Area)
+34986, OH (Metropolitan Area),, OH (Metropolitan Area)
+30466, TN,, TN
+30852, TN,, TN
+31703, TN,, TN
+32457, TN,, TN
+33195, TN,, TN
+30194, ID,, ID
+30466, ID,, ID
+30977, ID,, ID
+31703, ID,, ID
+32457, ID,, ID
+32575, ID,, ID
+30194, MA (Metropolitan Area),, MA (Metropolitan Area)
+30198, MA (Metropolitan Area),, MA (Metropolitan Area)
+30325, MA (Metropolitan Area),, MA (Metropolitan Area)
+30466, MA (Metropolitan Area),, MA (Metropolitan Area)
+30559, MA (Metropolitan Area),, MA (Metropolitan Area)
+30647, MA (Metropolitan Area),, MA (Metropolitan Area)
+30693, MA (Metropolitan Area),, MA (Metropolitan Area)
+30792, MA (Metropolitan Area),, MA (Metropolitan Area)
+30849, MA (Metropolitan Area),, MA (Metropolitan Area)
+30852, MA (Metropolitan Area),, MA (Metropolitan Area)
+30977, MA (Metropolitan Area),, MA (Metropolitan Area)
+30994, MA (Metropolitan Area),, MA (Metropolitan Area)
+31057, MA (Metropolitan Area),, MA (Metropolitan Area)
+31066, MA (Metropolitan Area),, MA (Metropolitan Area)
+31123, MA (Metropolitan Area),, MA (Metropolitan Area)
+31135, MA (Metropolitan Area),, MA (Metropolitan Area)
+31136, MA (Metropolitan Area),, MA (Metropolitan Area)
+31295, MA (Metropolitan Area),, MA (Metropolitan Area)
+31453, MA (Metropolitan Area),, MA (Metropolitan Area)
+31454, MA (Metropolitan Area),, MA (Metropolitan Area)
+31650, MA (Metropolitan Area),, MA (Metropolitan Area)
+31703, MA (Metropolitan Area),, MA (Metropolitan Area)
+31714, MA (Metropolitan Area),, MA (Metropolitan Area)
+32211, MA (Metropolitan Area),, MA (Metropolitan Area)
+32337, MA (Metropolitan Area),, MA (Metropolitan Area)
+32457, MA (Metropolitan Area),, MA (Metropolitan Area)
+32467, MA (Metropolitan Area),, MA (Metropolitan Area)
+32575, MA (Metropolitan Area),, MA (Metropolitan Area)
+33044, MA (Metropolitan Area),, MA (Metropolitan Area)
+33105, MA (Metropolitan Area),, MA (Metropolitan Area)
+33192, MA (Metropolitan Area),, MA (Metropolitan Area)
+33195, MA (Metropolitan Area),, MA (Metropolitan Area)
+33198, MA (Metropolitan Area),, MA (Metropolitan Area)
+33214, MA (Metropolitan Area),, MA (Metropolitan Area)
+33342, MA (Metropolitan Area),, MA (Metropolitan Area)
+33495, MA (Metropolitan Area),, MA (Metropolitan Area)
+33570, MA (Metropolitan Area),, MA (Metropolitan Area)
+33667, MA (Metropolitan Area),, MA (Metropolitan Area)
+34027, MA (Metropolitan Area),, MA (Metropolitan Area)
+34057, MA (Metropolitan Area),, MA (Metropolitan Area)
+34100, MA (Metropolitan Area),, MA (Metropolitan Area)
+34492, MA (Metropolitan Area),, MA (Metropolitan Area)
+34524, MA (Metropolitan Area),, MA (Metropolitan Area)
+34614, MA (Metropolitan Area),, MA (Metropolitan Area)
+34685, MA (Metropolitan Area),, MA (Metropolitan Area)
+34986, MA (Metropolitan Area),, MA (Metropolitan Area)
+30852, VT,, VT
+30194, NY,, NY
+31703, NY,, NY
+30194, MT,, MT
+30852, MT,, MT
+30977, MT,, MT
+31703, MT,, MT
+32457, MT,, MT
+32575, MT,, MT
+34027, DC (Metropolitan Area),, DC (Metropolitan Area)
+30189, IL,, IL
+30194, IL,, IL
+30198, IL,, IL
+30325, IL,, IL
+30436, IL,, IL
+30466, IL,, IL
+30529, IL,, IL
+30559, IL,, IL
+30615, IL,, IL
+30647, IL,, IL
+30693, IL,, IL
+30852, IL,, IL
+31066, IL,, IL
+31123, IL,, IL
+31135, IL,, IL
+31136, IL,, IL
+31295, IL,, IL
+31453, IL,, IL
+31454, IL,, IL
+31504, IL,, IL
+31638, IL,, IL
+31650, IL,, IL
+31703, IL,, IL
+31714, IL,, IL
+31871, IL,, IL
+31884, IL,, IL
+32211, IL,, IL
+32457, IL,, IL
+32467, IL,, IL
+32575, IL,, IL
+33044, IL,, IL
+33105, IL,, IL
+33192, IL,, IL
+33195, IL,, IL
+33198, IL,, IL
+33214, IL,, IL
+33244, IL,, IL
+33316, IL,, IL
+33495, IL,, IL
+33570, IL,, IL
+33667, IL,, IL
+33728, IL,, IL
+33851, IL,, IL
+34027, IL,, IL
+34057, IL,, IL
+34100, IL,, IL
+34321, IL,, IL
+34492, IL,, IL
+34524, IL,, IL
+34570, IL,, IL
+34614, IL,, IL
+34685, IL,, IL
+34986, IL,, IL
+35096, IL,, IL
+35412, IL,, IL
+30194, SC,, SC
+30852, SC,, SC
+30977, SC,, SC
+31453, SC,, SC
+31703, SC,, SC
+32467, SC,, SC
+32575, SC,, SC
+30466, IA,, IA
+30194, NC,, NC
+30466, NC,, NC
+30647, NC,, NC
+30852, NC,, NC
+30977, NC,, NC
+31453, NC,, NC
+32457, NC,, NC
+32575, NC,, NC
+30194, OH,, OH
+30325, OH,, OH
+30466, OH,, OH
+30559, OH,, OH
+30852, OH,, OH
+31135, OH,, OH
+31453, OH,, OH
+31454, OH,, OH
+31650, OH,, OH
+31703, OH,, OH
+31714, OH,, OH
+32211, OH,, OH
+32457, OH,, OH
+32467, OH,, OH
+32575, OH,, OH
+33195, OH,, OH
+33570, OH,, OH
+34100, OH,, OH
+34986, OH,, OH
+30852, MO,, MO
+33195, MO,, MO
+30852, FL,, FL
+31703, FL,, FL
+32467, FL,, FL
+32575, FL,, FL
+30466, MI,, MI
+30852, MI,, MI
+31453, MI,, MI
+31703, MI,, MI
+32457, MI,, MI
+32467, MI,, MI
+32575, MI,, MI
+33195, MI,, MI
+33667, MI,, MI
+30852, IA,, IA
+32575, IA,, IA
+33195, IA,, IA
+33851, TX,, TX
+30466, FL,, FL
+32457, FL,, FL
+30466, OR,, OR
+32457, OR,, OR
+32575, OR,, OR
+30466, ND,, ND
+30466, MN,, MN
+30852, MN,, MN
+31703, MN,, MN
+32457, MN,, MN
+33195, MN,, MN
+30198, NY (Metropolitan Area),, NY (Metropolitan Area)
+30466, NY (Metropolitan Area),, NY (Metropolitan Area)
+30559, NY (Metropolitan Area),, NY (Metropolitan Area)
+30852, NY (Metropolitan Area),, NY (Metropolitan Area)
+31123, NY (Metropolitan Area),, NY (Metropolitan Area)
+31454, NY (Metropolitan Area),, NY (Metropolitan Area)
+32323, NY (Metropolitan Area),, NY (Metropolitan Area)
+32457, NY (Metropolitan Area),, NY (Metropolitan Area)
+33192, NY (Metropolitan Area),, NY (Metropolitan Area)
+33195, NY (Metropolitan Area),, NY (Metropolitan Area)
+33214, NY (Metropolitan Area),, NY (Metropolitan Area)
+33316, NY (Metropolitan Area),, NY (Metropolitan Area)
+33570, NY (Metropolitan Area),, NY (Metropolitan Area)
+33667, NY (Metropolitan Area),, NY (Metropolitan Area)
+33728, NY (Metropolitan Area),, NY (Metropolitan Area)
+33851, NY (Metropolitan Area),, NY (Metropolitan Area)
+34027, NY (Metropolitan Area),, NY (Metropolitan Area)
+34057, NY (Metropolitan Area),, NY (Metropolitan Area)
+34321, NY (Metropolitan Area),, NY (Metropolitan Area)
+34492, NY (Metropolitan Area),, NY (Metropolitan Area)
+34524, NY (Metropolitan Area),, NY (Metropolitan Area)
+34570, NY (Metropolitan Area),, NY (Metropolitan Area)
+34576, NY (Metropolitan Area),, NY (Metropolitan Area)
+34614, NY (Metropolitan Area),, NY (Metropolitan Area)
+34685, NY (Metropolitan Area),, NY (Metropolitan Area)
+34986, NY (Metropolitan Area),, NY (Metropolitan Area)
+35096, NY (Metropolitan Area),, NY (Metropolitan Area)
+35380, NY (Metropolitan Area),, NY (Metropolitan Area)
+31453, FL,, FL
+30466, NV,, NV
+30852, NV,, NV
+31703, NV,, NV
+32457, NV,, NV
+32467, NV,, NV
+32575, NV,, NV
+33195, NV,, NV
+33667, NV,, NV
+30466, IN,, IN
+30852, IN,, IN
+31703, IN,, IN
+32457, IN,, IN
+32467, IN,, IN
+32575, IN,, IN
+33195, IN,, IN
+31703, WY,, WY
+32575, WY,, WY
+30852, MS,, MS
+30436, CA (Metropolitan Area),, CA (Metropolitan Area)
+30559, CA (Metropolitan Area),, CA (Metropolitan Area)
+30852, CA (Metropolitan Area),, CA (Metropolitan Area)
+31123, CA (Metropolitan Area),, CA (Metropolitan Area)
+31884, CA (Metropolitan Area),, CA (Metropolitan Area)
+33195, CA (Metropolitan Area),, CA (Metropolitan Area)
+34689, CA (Metropolitan Area),, CA (Metropolitan Area)
+30198, FL (Metropolitan Area),, FL (Metropolitan Area)
+30466, FL (Metropolitan Area),, FL (Metropolitan Area)
+30559, FL (Metropolitan Area),, FL (Metropolitan Area)
+30693, FL (Metropolitan Area),, FL (Metropolitan Area)
+30852, FL (Metropolitan Area),, FL (Metropolitan Area)
+31123, FL (Metropolitan Area),, FL (Metropolitan Area)
+31454, FL (Metropolitan Area),, FL (Metropolitan Area)
+31650, FL (Metropolitan Area),, FL (Metropolitan Area)
+31703, FL (Metropolitan Area),, FL (Metropolitan Area)
+32457, FL (Metropolitan Area),, FL (Metropolitan Area)
+33192, FL (Metropolitan Area),, FL (Metropolitan Area)
+33195, FL (Metropolitan Area),, FL (Metropolitan Area)
+33214, FL (Metropolitan Area),, FL (Metropolitan Area)
+33342, FL (Metropolitan Area),, FL (Metropolitan Area)
+33495, FL (Metropolitan Area),, FL (Metropolitan Area)
+33570, FL (Metropolitan Area),, FL (Metropolitan Area)
+33667, FL (Metropolitan Area),, FL (Metropolitan Area)
+34057, FL (Metropolitan Area),, FL (Metropolitan Area)
+34100, FL (Metropolitan Area),, FL (Metropolitan Area)
+34492, FL (Metropolitan Area),, FL (Metropolitan Area)
+34524, FL (Metropolitan Area),, FL (Metropolitan Area)
+34614, FL (Metropolitan Area),, FL (Metropolitan Area)
+35096, FL (Metropolitan Area),, FL (Metropolitan Area)
+35249, FL (Metropolitan Area),, FL (Metropolitan Area)
+30198, CA (Metropolitan Area),, CA (Metropolitan Area)
+30466, CA (Metropolitan Area),, CA (Metropolitan Area)
+30693, CA (Metropolitan Area),, CA (Metropolitan Area)
+30928, CA (Metropolitan Area),, CA (Metropolitan Area)
+31454, CA (Metropolitan Area),, CA (Metropolitan Area)
+31650, CA (Metropolitan Area),, CA (Metropolitan Area)
+31703, CA (Metropolitan Area),, CA (Metropolitan Area)
+32457, CA (Metropolitan Area),, CA (Metropolitan Area)
+32467, CA (Metropolitan Area),, CA (Metropolitan Area)
+33044, CA (Metropolitan Area),, CA (Metropolitan Area)
+33192, CA (Metropolitan Area),, CA (Metropolitan Area)
+33214, CA (Metropolitan Area),, CA (Metropolitan Area)
+33244, CA (Metropolitan Area),, CA (Metropolitan Area)
+33264, CA (Metropolitan Area),, CA (Metropolitan Area)
+33316, CA (Metropolitan Area),, CA (Metropolitan Area)
+33342, CA (Metropolitan Area),, CA (Metropolitan Area)
+33486, CA (Metropolitan Area),, CA (Metropolitan Area)
+33495, CA (Metropolitan Area),, CA (Metropolitan Area)
+33667, CA (Metropolitan Area),, CA (Metropolitan Area)
+33851, CA (Metropolitan Area),, CA (Metropolitan Area)
+34027, CA (Metropolitan Area),, CA (Metropolitan Area)
+34057, CA (Metropolitan Area),, CA (Metropolitan Area)
+34100, CA (Metropolitan Area),, CA (Metropolitan Area)
+34433, CA (Metropolitan Area),, CA (Metropolitan Area)
+34492, CA (Metropolitan Area),, CA (Metropolitan Area)
+34524, CA (Metropolitan Area),, CA (Metropolitan Area)
+34570, CA (Metropolitan Area),, CA (Metropolitan Area)
+34614, CA (Metropolitan Area),, CA (Metropolitan Area)
+34653, CA (Metropolitan Area),, CA (Metropolitan Area)
+34685, CA (Metropolitan Area),, CA (Metropolitan Area)
+35096, CA (Metropolitan Area),, CA (Metropolitan Area)
+32575, AR,, AR
+30852, KY,, KY
+31703, KY,, KY
+32467, KY,, KY
+33195, KY,, KY
+30852, CA,, CA
+30466, MO,, MO
+31703, MO,, MO
+32457, MO,, MO
+32467, MO,, MO
+32575, MO,, MO
+32467, TN,, TN
+30466, NE,, NE
+30852, NE,, NE
+32457, NE,, NE
+33195, NE,, NE
+30466, WI,, WI
+30852, WI,, WI
+31703, WI,, WI
+32457, WI,, WI
+33195, WI,, WI
+30466, LA,, LA
+30852, LA,, LA
+31703, LA,, LA
+32457, LA,, LA
+33195, LA,, LA
+32457, CA,, CA
+33195, CA,, CA
+30559, VA (Metropolitan Area),, VA (Metropolitan Area)
+31454, VA (Metropolitan Area),, VA (Metropolitan Area)
+33195, VA (Metropolitan Area),, VA (Metropolitan Area)
+33570, VA (Metropolitan Area),, VA (Metropolitan Area)
+30466, OK,, OK
+30852, OK,, OK
+30852, OR,, OR
+33195, OR,, OR
+30466, PA,, PA
+30852, ME,, ME
+30852, UT,, UT
+32457, UT,, UT
+33195, UT,, UT
+30852, GA,, GA
+31995, TX,, TX
+33256, TX,, TX
+34262, TX,, TX
+30852, PA,, PA
+30647, TX,, TX
+31066, TX,, TX
+30928, AZ,, AZ
+34314, AZ,, AZ
+31453, CT,, CT
