@@ -5,124 +5,62 @@ from psycopg2.extras import execute_values
 import os
 from sqlalchemy import create_engine
 import sys
-import re # Added for regex in city/state parsing
+import re
+from typing import Dict, Optional
 
-# --- AWS RDS PostgreSQL Connection Details ---
-# IMPORTANT: For production, use environment variables or a secrets manager for credentials.
-DB_HOST = "database-2.cjo0kekim2zi.us-east-2.rds.amazonaws.com"
-DB_NAME = "proyectobd2"
-DB_USER = "postgres"
-DB_PASS = "sytpAq-syfci3-cudrud" 
-DB_PORT = "5432"
+# --- PostgreSQL Connection Details ---
+# Using environment variables for security
+DB_HOST = os.getenv("DB_HOST", "database-2.cjo0kekim2zi.us-east-2.rds.amazonaws.com")
+DB_NAME = os.getenv("DB_NAME", "proyectobd2")
+DB_USER = os.getenv("DB_USER", "postgres")
+DB_PASS = os.getenv("DB_PASS", "sytpAq-syfci3-cudrud")
+DB_PORT = os.getenv("DB_PORT", "5432")
 # --- End Connection Details ---
 
 class AirlineDataNormalizer:
-    def __init__(self, csv_file_path, db_params):
+    """
+    Normalizes US Airlines flight data and populates PostgreSQL database.
+    
+    This class handles the complete ETL process for airline data normalization,
+    converting raw CSV data into a 3NF (Third Normal Form) database schema.
+    """
+    
+    def __init__(self, csv_file_path: str, db_params: Dict[str, str]):
         self.csv_file_path = csv_file_path
         self.df = None
         self.tables = {}
         self.db_params = db_params
+        
         try:
             self.engine = create_engine(
-                f"postgresql+psycopg2://{db_params['user']}:{db_params['password']}@{db_params['host']}:{db_params['port']}/{db_params['dbname']}"
+                f"postgresql+psycopg2://{db_params['user']}:{db_params['password']}@"
+                f"{db_params['host']}:{db_params['port']}/{db_params['dbname']}"
             )
         except Exception as e:
             print(f"Error creating SQLAlchemy engine: {e}")
             sys.exit(1)
 
-    def load_data(self):
+    def load_data(self) -> bool:
+        """Load and clean the CSV data."""
         print("Loading CSV data...")
         try:
-            self.df = pd.read_csv(self.csv_file_path, sep=',', encoding='utf-8',
-                                on_bad_lines='skip', low_memory=False)
+            self.df = pd.read_csv(
+                self.csv_file_path, 
+                sep=',', 
+                encoding='utf-8',
+                on_bad_lines='skip', 
+                low_memory=False
+            )
             print(f"Loaded {len(self.df)} records with {len(self.df.columns)} columns")
             initial_count = len(self.df)
 
-            # --- FARE RAW DATA INSPECTION (Commenting out as its purpose is served) ---
-            # print("\\nDEBUG: --- FARE RAW Data Inspection (First 50 unique values) ---")
-            # fare_cols_to_inspect = ['fare_lg', 'fare_low']
-            # for col_name in fare_cols_to_inspect:
-            #     if col_name in self.df.columns:
-            #         print(f"DEBUG: RAW unique values for '{col_name}':")
-            #         try:
-            #             # Temporarily convert to string to see unique raw values, handling potential mixed types
-            #             unique_vals = self.df[col_name].astype(str).unique()
-            #             print(unique_vals[:50]) # Show first 50 unique raw string values
-            #         except Exception as e_unique:
-            #             print(f"  Could not get unique values for {col_name}: {e_unique}")
-            #     else:
-            #         print(f"DEBUG: Column '{col_name}' not found in CSV.")
-            # print("DEBUG: --- End FARE RAW Data Inspection ---\\n")
-            # --- END FARE RAW DATA INSPECTION ---
-
-            # --- DISTANCE DATA INSPECTION ---
-            print("\\nDEBUG: --- DISTANCE Data Inspection ---")
-            distance_cols_to_inspect = ['nsmiles', 'Geocoded_City1', 'Geocoded_City2']
-            for col_name in distance_cols_to_inspect:
-                if col_name in self.df.columns:
-                    print(f"DEBUG: RAW unique values for '{col_name}' (first 30):")
-                    try:
-                        unique_vals = self.df[col_name].astype(str).unique()
-                        print(unique_vals[:30])
-                        # For nsmiles, also check if any values are numeric
-                        if col_name == 'nsmiles':
-                            numeric_count = pd.to_numeric(self.df[col_name], errors='coerce').notna().sum()
-                            print(f"  Number of rows with numeric values in nsmiles: {numeric_count} out of {len(self.df)}")
-                    except Exception as e_unique:
-                        print(f"  Could not get unique values for {col_name}: {e_unique}")
-                else:
-                    print(f"DEBUG: Column '{col_name}' not found in CSV.")
-            print("DEBUG: --- End DISTANCE Data Inspection ---\\n")
-            # --- END DISTANCE DATA INSPECTION ---
-
-            # Explicitly type critical ID fields as string first to handle mixed types
-            id_cols_to_str = ['airportid_1', 'airportid_2', 'citymarketid_1', 'citymarketid_2']
-            for col in id_cols_to_str:
-                if col in self.df.columns:
-                    self.df[col] = self.df[col].astype(str).str.strip()
-            
-            # Convert airport codes to string and strip
-            for col in ['airport_1', 'airport_2', 'city1', 'city2', 'carrier_lg', 'carrier_low']: # Added city1, city2, carrier_lg, carrier_low
-                if col in self.df.columns:
-                    self.df[col] = self.df[col].astype(str).str.strip()
-
-            # Numeric columns - passengers and nsmiles are NOT numeric based on raw data inspection
-            # They contain airport codes or similar strings.
-            numeric_cols = ['Year', 'quarter', 'fare', # Removed 'nsmiles', 'passengers'
-                            'large_ms', 'fare_lg', 'lf_ms', 'fare_low']
-            for col in numeric_cols:
-                if col in self.df.columns:
-                    self.df[col] = pd.to_numeric(self.df[col], errors='coerce')
-            
-            # Handle 'passengers' and 'nsmiles' as string columns if they exist
-            # No specific cleaning on them for now, they will be what they are from the CSV.
-            # The database schema expects INTEGER/DECIMAL, so these will become NULLs if not convertible by DB.
-
-            # Drop rows if essential IDs for linking are missing AFTER type conversion
-            # airport_1 and airport_2 are actual airport codes (like ABE, MCO)
-            self.df = self.df.dropna(subset=['Year', 'citymarketid_1', 'citymarketid_2', 
-                                             'airportid_1', 'airportid_2', 'airport_1', 'airport_2'])
-
-            # Removed passenger filter as 'passengers' column does not contain numeric passenger data
-            # if 'passengers' in self.df.columns:
-            #      self.df = self.df[~self.df['passengers'].astype(str).str.match(r'^[A-Z]{3,}[A-Z]*$')]
-
-            def validate_and_clean_carrier_code(code_val):
-                # Expects a string or NaN after initial .astype(str).str.strip()
-                if pd.isna(code_val): return np.nan # Should not happen if already string
-                code_str = str(code_val).strip() # Redundant strip if already done, but safe
-                
-                # Allow if not empty, not 'NAN', and reasonable length (e.g., 1-10 chars)
-                if code_str and code_str.upper() != 'NAN' and 1 <= len(code_str) <= 10:
-                    return code_str # Accepts alphanumeric, including all-numeric strings
-                return np.nan
-
-            if 'carrier_lg' in self.df.columns:
-                self.df['carrier_lg'] = self.df['carrier_lg'].apply(validate_and_clean_carrier_code)
-            if 'carrier_low' in self.df.columns:
-                self.df['carrier_low'] = self.df['carrier_low'].apply(validate_and_clean_carrier_code)
+            # Clean and process data
+            self._clean_data_types()
+            self._validate_essential_fields()
+            self._clean_carrier_codes()
             
             print(f"After cleaning: {len(self.df)} records ({initial_count - len(self.df)} removed)")
+            
             if self.df.empty:
                 print("No data left after cleaning. Halting.")
                 return False
@@ -133,6 +71,51 @@ class AirlineDataNormalizer:
             import traceback
             traceback.print_exc()
             return False
+
+    def _clean_data_types(self) -> None:
+        """Clean and convert data types for essential columns."""
+        # Convert ID fields to string
+        id_cols = ['airportid_1', 'airportid_2', 'citymarketid_1', 'citymarketid_2']
+        for col in id_cols:
+            if col in self.df.columns:
+                self.df[col] = self.df[col].astype(str).str.strip()
+        
+        # Convert airport and carrier codes to string
+        string_cols = ['airport_1', 'airport_2', 'city1', 'city2', 'carrier_lg', 'carrier_low']
+        for col in string_cols:
+            if col in self.df.columns:
+                self.df[col] = self.df[col].astype(str).str.strip()
+
+        # Convert numeric columns
+        numeric_cols = ['Year', 'quarter', 'fare', 'large_ms', 'fare_lg', 'lf_ms', 'fare_low']
+        for col in numeric_cols:
+            if col in self.df.columns:
+                self.df[col] = pd.to_numeric(self.df[col], errors='coerce')
+
+    def _validate_essential_fields(self) -> None:
+        """Remove rows with missing essential data."""
+        essential_fields = [
+            'Year', 'citymarketid_1', 'citymarketid_2', 
+            'airportid_1', 'airportid_2', 'airport_1', 'airport_2'
+        ]
+        self.df = self.df.dropna(subset=essential_fields)
+
+    def _clean_carrier_codes(self) -> None:
+        """Clean and validate carrier codes."""
+        def validate_carrier_code(code_val) -> Optional[str]:
+            if pd.isna(code_val):
+                return np.nan
+            
+            code_str = str(code_val).strip()
+            
+            # Allow if not empty, not 'NAN', and reasonable length
+            if code_str and code_str.upper() != 'NAN' and 1 <= len(code_str) <= 10:
+                return code_str
+            return np.nan
+
+        for col in ['carrier_lg', 'carrier_low']:
+            if col in self.df.columns:
+                self.df[col] = self.df[col].apply(validate_carrier_code)
 
     def create_cities_table(self):
         print("Creating Cities table DataFrame...")
