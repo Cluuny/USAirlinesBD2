@@ -55,21 +55,25 @@ class AirlineDataNormalizer:
             # print("DEBUG: --- End FARE RAW Data Inspection ---\\n")
             # --- END FARE RAW DATA INSPECTION ---
 
-            # --- RAW DATA INSPECTION (Keeping this for reference if needed later, but commenting out for normal runs) ---
-            # print("\\nDEBUG: --- RAW Data Inspection (First 50 unique values) ---")
-            # problem_cols = ['passengers', 'nsmiles', 'carrier_lg', 'carrier_low', 'city1', 'city2']
-            # for col_name in problem_cols:
-            #     if col_name in self.df.columns:
-            #         print(f"DEBUG: RAW unique values for '{col_name}':")
-            #         try:
-            #             unique_vals = self.df[col_name].astype(str).unique()
-            #             print(unique_vals[:50])
-            #         except Exception as e_unique:
-            #             print(f"  Could not get unique values for {col_name}: {e_unique}")
-            #     else:
-            #         print(f"DEBUG: Column '{col_name}' not found in CSV.")
-            # print("DEBUG: --- End RAW Data Inspection ---\\n")
-            # --- END RAW DATA INSPECTION ---
+            # --- DISTANCE DATA INSPECTION ---
+            print("\\nDEBUG: --- DISTANCE Data Inspection ---")
+            distance_cols_to_inspect = ['nsmiles', 'Geocoded_City1', 'Geocoded_City2']
+            for col_name in distance_cols_to_inspect:
+                if col_name in self.df.columns:
+                    print(f"DEBUG: RAW unique values for '{col_name}' (first 30):")
+                    try:
+                        unique_vals = self.df[col_name].astype(str).unique()
+                        print(unique_vals[:30])
+                        # For nsmiles, also check if any values are numeric
+                        if col_name == 'nsmiles':
+                            numeric_count = pd.to_numeric(self.df[col_name], errors='coerce').notna().sum()
+                            print(f"  Number of rows with numeric values in nsmiles: {numeric_count} out of {len(self.df)}")
+                    except Exception as e_unique:
+                        print(f"  Could not get unique values for {col_name}: {e_unique}")
+                else:
+                    print(f"DEBUG: Column '{col_name}' not found in CSV.")
+            print("DEBUG: --- End DISTANCE Data Inspection ---\\n")
+            # --- END DISTANCE DATA INSPECTION ---
 
             # Explicitly type critical ID fields as string first to handle mixed types
             id_cols_to_str = ['airportid_1', 'airportid_2', 'citymarketid_1', 'citymarketid_2']
@@ -270,16 +274,22 @@ class AirlineDataNormalizer:
 
     def create_routes_table(self):
         print("Creating Routes table DataFrame...")
-        # The 'distance_miles' column in DB is DECIMAL, will become NULL as nsmiles col from CSV is not numeric.
-        routes_df = self.df[['airportid_1', 'airportid_2']].rename( # Only select columns needed for route definition
+        # Use Geocoded_City1 and Geocoded_City2 to calculate distance_miles
+        routes_df = self.df[['airportid_1', 'airportid_2', 'Geocoded_City1', 'Geocoded_City2']].rename(
             columns={
                 'airportid_1': 'origin_airport_id', 
                 'airportid_2': 'destination_airport_id',
+                'Geocoded_City1': 'geo_coord_1',
+                'Geocoded_City2': 'geo_coord_2'
             }
         ).copy()
         routes_df['origin_airport_id'] = routes_df['origin_airport_id'].astype(str)
         routes_df['destination_airport_id'] = routes_df['destination_airport_id'].astype(str)
         routes_df = routes_df.dropna(subset=['origin_airport_id', 'destination_airport_id'])
+        
+        # Convert geocoded columns to numeric
+        routes_df['geo_coord_1'] = pd.to_numeric(routes_df['geo_coord_1'], errors='coerce')
+        routes_df['geo_coord_2'] = pd.to_numeric(routes_df['geo_coord_2'], errors='coerce')
         
         if 'airports' in self.tables and not self.tables['airports'].empty:
             valid_airport_ids = self.tables['airports']['airport_id'].unique()
@@ -290,15 +300,77 @@ class AirlineDataNormalizer:
         else:
             print("Warning: Airports table is empty or not found, cannot filter routes by airport_id.")
 
-        # Get unique routes directly
-        unique_routes_df = routes_df.drop_duplicates(subset=['origin_airport_id', 'destination_airport_id']).reset_index(drop=True)
+        # Get unique routes and calculate distance using geocoded data
+        def calculate_distance_from_geocoded(geo1, geo2):
+            """
+            Attempt to calculate distance from geocoded values.
+            This is experimental - the exact meaning of these geocoded values isn't clear.
+            """
+            if pd.isna(geo1) or pd.isna(geo2):
+                return np.nan
+            
+            # Option 1: Simple difference (if these are distance-related values)
+            distance_diff = abs(geo2 - geo1)
+            
+            # Option 2: Average (if they represent different aspects of the same route)
+            distance_avg = (geo1 + geo2) / 2
+            
+            # Option 3: Check if one of them directly represents distance
+            # Since typical US flight distances range from ~200 to ~3000 miles
+            if 200 <= geo1 <= 3000:
+                return geo1
+            elif 200 <= geo2 <= 3000:
+                return geo2
+            elif 200 <= distance_diff <= 3000:
+                return distance_diff
+            elif 200 <= distance_avg <= 3000:
+                return distance_avg
+            else:
+                # If none seem like reasonable distances, try scaling
+                # Maybe the values are in tens of miles, hundreds, etc.
+                for scale in [0.1, 0.01, 10, 100]:
+                    scaled_geo1 = geo1 * scale
+                    scaled_geo2 = geo2 * scale
+                    scaled_diff = distance_diff * scale
+                    scaled_avg = distance_avg * scale
+                    
+                    if 200 <= scaled_geo1 <= 3000:
+                        return scaled_geo1
+                    elif 200 <= scaled_geo2 <= 3000:
+                        return scaled_geo2
+                    elif 200 <= scaled_diff <= 3000:
+                        return scaled_diff
+                    elif 200 <= scaled_avg <= 3000:
+                        return scaled_avg
+                
+                # If nothing works, return NaN
+                return np.nan
+
+        # Group by route to get unique combinations
+        routes_grouped = routes_df.groupby(['origin_airport_id', 'destination_airport_id']).agg({
+            'geo_coord_1': 'first',  # Take first occurrence
+            'geo_coord_2': 'first'   # Take first occurrence
+        }).reset_index()
         
-        # distance_miles will be NULL (NaN) as the source 'nsmiles' column is not numeric distance data
-        unique_routes_df['distance_miles'] = np.nan 
+        # Calculate distance_miles using the geocoded data
+        routes_grouped['distance_miles'] = routes_grouped.apply(
+            lambda row: calculate_distance_from_geocoded(row['geo_coord_1'], row['geo_coord_2']), 
+            axis=1
+        )
         
-        unique_routes_df['route_id'] = unique_routes_df.index + 1
-        self.tables['routes'] = unique_routes_df[['route_id', 'origin_airport_id', 'destination_airport_id', 'distance_miles']]
-        print(f"Created Routes DataFrame with {len(self.tables['routes'])} unique routes")
+        routes_grouped['route_id'] = routes_grouped.index + 1
+        self.tables['routes'] = routes_grouped[['route_id', 'origin_airport_id', 'destination_airport_id', 'distance_miles']]
+        
+        # Print some statistics about the distance calculation
+        valid_distances = routes_grouped['distance_miles'].dropna()
+        if len(valid_distances) > 0:
+            print(f"Created Routes DataFrame with {len(self.tables['routes'])} unique routes")
+            print(f"Successfully calculated distances for {len(valid_distances)} routes ({len(valid_distances)/len(routes_grouped)*100:.1f}%)")
+            print(f"Distance range: {valid_distances.min():.1f} - {valid_distances.max():.1f} miles")
+            print(f"Average distance: {valid_distances.mean():.1f} miles")
+        else:
+            print(f"Created Routes DataFrame with {len(self.tables['routes'])} unique routes")
+            print("Warning: Could not calculate distances from geocoded data - all distances remain NULL")
 
     def create_flights_table(self):
         print("Creating Flights table DataFrame...")
