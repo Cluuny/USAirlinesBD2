@@ -44,14 +44,38 @@ class AirlineDataNormalizer:
         """Load and clean the CSV data."""
         print("Loading CSV data...")
         try:
+            # Fix: Handle embedded commas in city names by using quotechar
             self.df = pd.read_csv(
                 self.csv_file_path, 
                 sep=',', 
                 encoding='utf-8',
                 on_bad_lines='skip', 
-                low_memory=False
+                low_memory=False,
+                quotechar='"'  # Handle quoted fields with commas
             )
+            
+            # Debug: Print column info to verify parsing
             print(f"Loaded {len(self.df)} records with {len(self.df.columns)} columns")
+            print("Columns:", self.df.columns.tolist())
+            
+            # Check if we have the expected carrier columns with actual airline codes
+            if 'fare_lg' in self.df.columns and 'fare_low' in self.df.columns:
+                print("Sample carrier codes from fare_lg:", self.df['fare_lg'].dropna().unique()[:10])
+                print("Sample carrier codes from fare_low:", self.df['fare_low'].dropna().unique()[:10])
+                
+                # Fix: The real carrier codes are in fare_lg and fare_low columns due to CSV parsing issue
+                # Rename them to the expected column names
+                self.df = self.df.rename(columns={
+                    'fare_lg': 'carrier_lg_real',
+                    'fare_low': 'carrier_low_real'
+                })
+                
+                # Replace the incorrectly parsed carrier columns with the real ones
+                self.df['carrier_lg'] = self.df['carrier_lg_real']
+                self.df['carrier_low'] = self.df['carrier_low_real']
+                
+                print("Fixed carrier column mapping due to CSV parsing issue")
+            
             initial_count = len(self.df)
 
             # Clean and process data
@@ -60,6 +84,13 @@ class AirlineDataNormalizer:
             self._clean_carrier_codes()
             
             print(f"After cleaning: {len(self.df)} records ({initial_count - len(self.df)} removed)")
+            
+            # Debug: Show sample of actual carrier codes
+            if 'carrier_lg' in self.df.columns:
+                valid_lg_carriers = self.df['carrier_lg'].dropna().unique()
+                valid_low_carriers = self.df['carrier_low'].dropna().unique()
+                print(f"Found {len(valid_lg_carriers)} unique legacy carriers: {valid_lg_carriers[:10]}")
+                print(f"Found {len(valid_low_carriers)} unique low-cost carriers: {valid_low_carriers[:10]}")
             
             if self.df.empty:
                 print("No data left after cleaning. Halting.")
@@ -108,9 +139,17 @@ class AirlineDataNormalizer:
             
             code_str = str(code_val).strip()
             
-            # Allow if not empty, not 'NAN', and reasonable length
-            if code_str and code_str.upper() != 'NAN' and 1 <= len(code_str) <= 10:
-                return code_str
+            # Filter criteria for real airline codes:
+            # 1. Not empty and not 'NAN'
+            # 2. Length between 1-10 characters
+            # 3. Contains at least one letter (real airline codes have letters)
+            # 4. Not purely numeric (those were the wrong data)
+            if (code_str and 
+                code_str.upper() != 'NAN' and 
+                1 <= len(code_str) <= 10 and
+                any(c.isalpha() for c in code_str) and  # Must contain at least one letter
+                not code_str.isdigit()):  # Must not be purely numeric
+                return code_str.upper()  # Standardize to uppercase
             return np.nan
 
         for col in ['carrier_lg', 'carrier_low']:
