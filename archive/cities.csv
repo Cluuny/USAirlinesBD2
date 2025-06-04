@@ -1,0 +1,111 @@
+id,city_name,city_state
+1,Albany,NY
+2,Albuquerque,NM
+3,Allentown/Bethlehem/Easton,PA
+4,Amarillo,TX
+5,Asheville,NC
+6,Atlanta,GA
+7,Austin,TX
+8,Bend/Redmond,OR
+9,Birmingham,AL
+10,Bismarck/Mandan,ND
+11,Boise,ID
+12,Boston,MA
+13,Bozeman,MT
+14,Buffalo,NY
+15,Burlington,VT
+16,Cedar Rapids/Iowa City,IA
+17,Charleston,SC
+18,Charlotte,NC
+19,Chicago,IL
+20,Cincinnati,OH
+21,Cleveland,OH
+22,Colorado Springs,CO
+23,Columbia,SC
+24,Columbus,OH
+25,Dallas/Fort Worth,TX
+26,Denver,CO
+27,Des Moines,IA
+28,Detroit,MI
+29,El Paso,TX
+30,Eugene,OR
+31,Fargo,ND
+32,Fort Myers,FL
+33,Fresno,CA
+34,Grand Rapids,MI
+35,Greensboro/High Point,NC
+36,Greenville/Spartanburg,SC
+37,Harlingen/San Benito,TX
+38,Hartford,CT
+39,Houston,TX
+40,Huntsville,AL
+41,Indianapolis,IN
+42,Jackson,WY
+43,Jackson/Vicksburg,MS
+44,Jacksonville,FL
+45,Kalispell,MT
+46,Kansas City,MO
+47,Key West,FL
+48,Knoxville,TN
+49,Las Vegas,NV
+50,Little Rock,AR
+51,Los Angeles,CA
+52,Louisville,KY
+53,Lubbock,TX
+54,Madison,WI
+55,Martha's Vineyard,MA
+56,Medford,OR
+57,Memphis,TN
+58,Miami,FL
+59,Midland/Odessa,TX
+60,Milwaukee,WI
+61,Minneapolis/St. Paul,MN
+62,Mission/McAllen/Edinburg,TX
+63,Missoula,MT
+64,Myrtle Beach,SC
+65,Nantucket,MA
+66,Nashville,TN
+67,New Orleans,LA
+68,New York City,NY
+69,Norfolk,VA
+70,Oklahoma City,OK
+71,Omaha,NE
+72,Orlando,FL
+73,Palm Springs,CA
+74,Panama City,FL
+75,Pensacola,FL
+76,Philadelphia,PA
+77,Phoenix,AZ
+78,Pittsburgh,PA
+79,Portland,ME
+80,Portland,OR
+81,Provo,UT
+82,Raleigh/Durham,NC
+83,Reno,NV
+84,Richmond,VA
+85,Rochester,NY
+86,Sacramento,CA
+87,Salt Lake City,UT
+88,San Antonio,TX
+89,San Diego,CA
+90,San Francisco,CA
+91,Santa Barbara,CA
+92,Santa Rosa,CA
+93,Sarasota/Bradenton,FL
+94,Savannah,GA
+95,Seattle,WA
+96,Sioux Falls,SD
+97,Spokane,WA
+98,Springfield,MO
+99,St. Louis,MO
+100,Syracuse,NY
+101,Tallahassee,FL
+102,Tampa,FL
+103,Traverse City,MI
+104,Tucson,AZ
+105,Tulsa,OK
+106,Valparaiso,FL
+107,Washington,DC
+108,West Palm Beach/Palm Beach,FL
+109,Wichita,KS
+110,Wilmington,NC
