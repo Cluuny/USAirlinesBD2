@@ -468,10 +468,9 @@ Este proyecto está bajo la **Licencia MIT**. Ver archivo `LICENSE` para más de
 
 ## 📞 **Contacto y Soporte**
 
-- **📧 Email:** <sebastian.ca0102@gmail.com>
+- **📧 Email:** <vistrent834@gmail.com>
 - **🔗 GitHub:** [Cluuny](https://github.com/Cluuny)
 - **🎓 Universidad:** UPTC 2025-I
-- **💼 LinkedIn:** [Sebastián Cañón](https://linkedin.com/in/sebastian-canon)
 
 ---
 
